@@ -32,9 +32,19 @@ var people = [
 				href: 'http://www.facebook.com/sara.wiberg.18'
 			}
 		]
+	},
+	{
+		name: 'John',
+		title: 'JoHnyPorn',
+		links: [
+			{
+				name: 'Johns facebook',
+				href: 'http://www.facebook.com/john.rapp.3'
+			}
+		]
 	}
 ];
-var person = people[2];
+var person = people[3];
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
