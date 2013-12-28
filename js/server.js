@@ -100,7 +100,7 @@ var server = function() {
 			{
 				headline: 'You have done well',
 				summary: 'More views per day than ever!',
-				content: 'fdhgrthrst',
+				content: 'Today we can proudly present new all time records! We have had 2527583 unique visitors this month, an average of 84252 unique visitors a day! Our most popular clip is amazlingly still' + name + 'i skogen!',
 				image: 'image/visitors.jpg'
 			}
 		],
