@@ -174,8 +174,8 @@ var server = function() {
 						premium: false
 					},
 					{
-						name: People.axel + '\'s tight pussy',
-						description: People.axel + ' visiting a friend',
+						name: people.axel + '\'s tight pussy',
+						description: people.axel + ' visiting a friend',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://diyvagina.com/wp-content/uploads/2013/02/meat-fleshlight-pussy.jpg',
 						views: 67,
@@ -186,7 +186,7 @@ var server = function() {
 					},
 					{
 						name: 'Morgonrunk',
-						description: People.john + ' på toan',
+						description: people.john + ' på toan',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
 						views: 18,
@@ -201,7 +201,7 @@ var server = function() {
 				name: 'Fetish',
 				videos : [
 					{
-						name: People.axel + ' provar bondage',
+						name: people.axel + ' provar bondage',
 						description: 'Familjeutflykten',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
@@ -217,7 +217,7 @@ var server = function() {
 				name: 'Animal',
 				videos : [
 					{
-						name: People.axel + ' on farm',
+						name: people.axel + ' on farm',
 						description: 'Dogs, tools and horses',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
