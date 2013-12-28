@@ -1,7 +1,43 @@
-var person = {name: 'Axel', title: 'AxXel'};
-var Section = function(name, populate) {
+var people = [
+	{
+		name: 'Axel',
+		title: 'AxXelPorn',
+		links: [
+			{
+				name: 'Axels facebook',
+				href: 'http://www.facebook.com/axel.k.lindgren'
+			},
+			{
+				name: 'Axels youtube',
+				href: 'http://www.youtube.com/user/swifTyBobCaT'
+			}
+		]
+	},
+	{
+		name: 'Simon',
+		title: 'SiMmePorn',
+		links: [
+			{
+				name: 'Simons facebook',
+				href: 'http://www.facebook.com/simon.halvdansson'
+			}
+		]
+	},
+	{
+		name: 'Sara',
+		title: 'SaRaPorn',
+		links: [
+			{
+				name: 'Saras facebook',
+				href: 'http://www.facebook.com/sara.wiberg.18'
+			}
+		]
+	}
+];
+var person = people[2];
+var Section = function(name, assign) {
 	this.name = name;
-	this.populate = populate;
+	this.assign = assign;
 	this.videos = [];
 }
 var server = function() {
@@ -11,14 +47,19 @@ var server = function() {
 				name: 'Amateur',
 				videos : [
 					{
-						name: name + ' i skogen',
-						description: name + ' runkar sin mamma i skogen',
+						name: person.name + ' i skogen',
+						description: person.name + ' runkar sin mamma i skogen',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 						views: 18905,
 						watched: true,
+<<<<<<< HEAD
 						premium: false,
 						hot: true
+=======
+						hot: true,
+						premium: true
+>>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -26,14 +67,19 @@ var server = function() {
 				name: 'Sneaky film',
 				videos : [
 					{ 
-						name: name + ' genom nyckelålet',
-						desc: name + 's mammas födelsedagsknull',
+						name: person.name + ' genom nyckelålet',
+						desc: person.name + 's mammas födelsedagsknull',
 						src: 'videos/parentsex.mp4',
 						thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 						views: 675,
 						watched: false,
+<<<<<<< HEAD
 						premium: true,
 						hot: true
+=======
+						hot: true,
+						premium: true
+>>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -41,14 +87,19 @@ var server = function() {
 				name: 'MILF',
 				videos : [
 					{
-						name: name + ' i garderoben',
-						description: name + 's mamma byter om',
+						name: person.name + ' i garderoben',
+						description: person.name + 's mamma byter om',
 						src: 'videos/nakedmom.mp4',
 						thumbnail: 'thumbnails/nakedmom.jpg',
 						views: 1,
 						watched: true,
+<<<<<<< HEAD
 						premium: false,
 						hot: false
+=======
+						hot: false,
+						premium: true
+>>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -56,14 +107,20 @@ var server = function() {
 				name: 'Mature',
 				videos : [
 					{ 
-						name: name + ' på besök',
-						description: name + 's farmor och farfar tagna på bar gärning',
+						name: person.name + ' på besök',
+						description: person.name + 's farmor och farfar tagna på bar gärning',
 						src: 'videos/hotgrandma.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
+<<<<<<< HEAD
 						watched: true,
 						premium: true,
 						hot: false
+=======
+						watched: false,
+						hot: true,
+						premium: false
+>>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -71,33 +128,38 @@ var server = function() {
 				name: 'Virgin',
 				videos : [
 					{
-						name: name + ' i badkaret',
-						description: name + ' och syrran på toa',
+						name: person.name + ' i badkaret',
+						description: person.name + ' och syrran på toa',
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
 						watched: true,
+<<<<<<< HEAD
 						premium: false,
 						hot: false
+=======
+						hot: false,
+						premium: false
+>>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			}
 		},
 		news: [
 			{
-				headline: name + ' just fucked a goat!',
+				headline: person.name + ' just fucked a goat!',
 				summary: 'TAPED IT HIMSELF',
 				content: 'It\'s maddafakking mental!',
 				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg'
 			},
 			{
-				headline: name + ' juerked off!',
+				headline: person.name + ' juerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg'
 			},
 			{
-				headline: name + ' did something INSANE!',
+				headline: person.name + ' did something INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can not explain it! Why would anyone do somthing like that, we just can not understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg'
@@ -116,25 +178,24 @@ var server = function() {
 			}
 		],
 		sections: {
+			premium: new Section('Premium', function(video) {
+				return video.premium;
+			}),
 			hot: new Section('Hot', function(video) {
-				if (video.hot) {
-					this.videos.push(video);
-				};
+				return video.hot;
 			}),
 			watched: new Section('Most watched', function(video) {
-				if (video.watched && !video.hot) {
-					this.videos.push(video);
-				};
+				return video.watched;
 			})
 		},
 		links: [
 			{
-				name: name + '\'s facebook',
-				href: 'http://www.facebook.com/axel.k.lindgren'
+				name: person.name + '\'s facebook',
+				href: person.facebook
 			},
 			{
-				name: name + '\'s youtube',
-				href: 'http://www.youtube.com/user/swifTyBobCaT'
+				name: person.name + '\'s youtube',
+				href: person.youtube
 			}
 		],
 		premium: false
@@ -145,8 +206,14 @@ var server = function() {
 			var video = data.categories[category].videos[id];
 			video.href = '#/video/' + category + '/' + id;
 
-			for(var section in data.sections) {
-				data.sections[section].populate(video);
+			for(var sec in data.sections) {
+				var section = data.sections[sec];
+				if(!video.assigned) {
+					if(section.assign(video)) {
+						section.videos.push(video);
+						video.assigned = true;
+					}
+				}
 			}
 		}
 	}
