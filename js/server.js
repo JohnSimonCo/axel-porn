@@ -158,7 +158,7 @@ var server = function() {
 				videos : [
 					{
 						name: person.name + ' on farm',
-						description: Dogs, tools and horses,
+						description: 'Dogs, tools and horses',
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
 						views: 78,
