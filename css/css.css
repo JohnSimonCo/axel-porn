@@ -255,9 +255,12 @@ a {
 #premium-signup {
     background-color: #aaa;
     opacity: 1;
-    width: 600px;
+    width: 800px;
     margin: auto;
-    z-index: 100;
+    z-index: 101;
+}
+#premium-close {
+    
 }
 
 ::-webkit-scrollbar

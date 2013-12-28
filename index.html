@@ -83,7 +83,7 @@
 
         <div ng-show="found && (video.premium && !premium())">
 
-            <h3>You need premium bro</h3>
+            <h3 class="premium">You need premium bro</h3>
             
         </div>
 
@@ -135,7 +135,7 @@
     <script type="text/ng-template" id="partials/about.html">
         <div class="about about-center">
     
-            {{person.title}} is a project designed to help people all around the world access our wide collection of {{person.name}} porn. We consider it a basic human  right to have access to pornographic content with  in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.
+            {{person.title}} is a project designed to help people all around the world access our wide collection of {{person.name}} porn. We consider it a basic human  right to have access to pornographic content with {{person.name}} in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.
     
         </div>
     </script>
@@ -169,14 +169,16 @@
     <div id="premium-signup-container" ng-show="premiumSignup" ng-click="togglePremiumSignup(false)">
 
         <div id="premium-signup">
-            <img src="res/close.png" ng-click="togglePremiumSignup(false)" />
+            <img id="premium-close" src="res/close.png" ng-click="togglePremiumSignup(false)" />
         </div>
 
     </div>
     
     <div class="filler"></div>
     
-    <div ng-view id="ng-view"></div>
+    <div class="standard-center">
+        <div ng-view id="ng-view"></div>
+    </div>
     
     <div class="filler"></div>
     
