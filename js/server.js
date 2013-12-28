@@ -246,7 +246,7 @@ var server = function() {
 				href: ''
 			},
 			{
-				headline: person.name + ' juerked off!',
+				headline: person.name + ' jerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg',
