@@ -284,6 +284,11 @@ a {
     
 }
 
+.standard-list ul li {
+    list-style-type: none;
+    margin: 0px;
+}
+
 @media screen and (min-width:1919px) {
 	.standard-center {
     	max-width:1460px;
