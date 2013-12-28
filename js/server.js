@@ -103,7 +103,7 @@ var server = function() {
 					{
 						name: person.name + ' i garderoben',
 						description: person.name + 's mamma byter om',
-						src: 'videos/nakedmom.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://dailykimchi.com/wp-content/uploads/2011/09/chinese-girls-publicly-changing-clothes-on-shanghai-metro-01.jpg',
 						views: 1,
 						feed: true,
@@ -119,7 +119,7 @@ var server = function() {
 					{ 
 						name: person.name + ' på besök',
 						description: person.name + 's farmor och farfar tagna på bar gärning',
-						src: 'videos/hotgrandma.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
 						feed: true,
@@ -146,7 +146,7 @@ var server = function() {
 					{
 						name: person.name + '\'s tight pussy',
 						description: person.name + ' visiting a friend',
-						src: 'videos/friendsforever.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://diyvagina.com/wp-content/uploads/2013/02/meat-fleshlight-pussy.jpg',
 						views: 67,
 						feed: true,
@@ -157,7 +157,7 @@ var server = function() {
 					{
 						name: 'Morgonrunk',
 						description: person.name + ' på toan',
-						src: 'videos/morgonrunk.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
 						views: 18,
 						feed: true,
@@ -173,7 +173,7 @@ var server = function() {
 					{
 						name: person.name + ' provar bondage',
 						description: 'Familjeutflykten',
-						src: 'videos/syrran.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
 						views: 32,
 						feed: true,
@@ -189,7 +189,7 @@ var server = function() {
 					{
 						name: person.name + ' on farm',
 						description: 'Dogs, tools and horses',
-						src: 'videos/syrran.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
 						views: 78,
 						feed: true,
@@ -200,7 +200,7 @@ var server = function() {
 					{
 						name: person.name + ' with Rosa',
 						description: 'Moaning MU!',
-						src: 'videos/syrran.mp4',
+						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
 						views: 78,
 						feed: true,
