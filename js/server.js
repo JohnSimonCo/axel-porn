@@ -29,7 +29,7 @@ var people = [
 		links: [
 			{
 				name: 'Saras facebook',
-				href: 'http://www.facebook.com/sara.wiberg.18'
+				href: 'http://www.facebook.com/sara.wiberg.12'
 			}
 		]
 	}
@@ -80,7 +80,7 @@ var server = function() {
 						name: person.name + ' i garderoben',
 						description: person.name + 's mamma byter om',
 						src: 'videos/nakedmom.mp4',
-						thumbnail: 'thumbnails/nakedmom.jpg',
+						thumbnail: 'http://dailykimchi.com/wp-content/uploads/2011/09/chinese-girls-publicly-changing-clothes-on-shanghai-metro-01.jpg',
 						views: 1,
 						watched: true,
 						hot: false,
@@ -141,14 +141,38 @@ var server = function() {
 			{
 				headline: 'You have done well',
 				summary: 'More views per day than ever!',
-				content: 'Today we can proudly present new all time records! We have had 2527583 unique visitors this month, an average of 84252 unique visitors a day! Our most popular clip is amazlingly still' + name + 'i skogen!',
+				content: 'Today we can proudly present new all time records! We have had 2527583 unique visitors this month, which means an average of 84252 unique visitors a day! Our most popular clip is amazlingly still' + name + 'i skogen!',
 				image: 'http://www.colourbox.com/preview/4297446-685999-vector-diagram-with-red-arrow-going-up.jpg'
 			},
+			{
+				headline: 'New premium Video!',
+				summary: 'We have added a new, mindblowingly sexy video you just can not believe is real!',
+				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
+				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
+			}
 			{
 				headline: 'GO PREMIUM',
 				summary: 'Unluck exclusive videos!',
 				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
+			}
+			{
+				headline: 'Inspire us!',
+				summary: 'This is your chance',
+				content: 'By going premium you will be able to contact us personally and tell us about your personal preferences. We lissen to our visitors and make changes. Dont miss your chance to be a part of the developement of this sight.',
+				image: 'http://www.weareprivate.net/blog/wp-content/uploads/fetish-chair.jpg'
+			}
+			{
+				headline: 'New premium video!',
+				summary: 'How to fap like a GOD!',
+				content: 'Learn about this amazing new method! Watch him please himself like no man before him. He will teach you the tecknics you did not even no exist!',
+				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
+			}
+			{
+				headline: 'Want to be seen?',
+				summary: 'We want new stars!',
+				content: 'If you like beiging seen, we have a offer you simply can not refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here',
+				image: 'http://3.bp.blogspot.com/_YvpXQckVIuk/Se7WoQvxv2I/AAAAAAAAAI0/azbZNN41PpA/s200/gold+star+sxc'
 			}
 		],
 		sections: {
