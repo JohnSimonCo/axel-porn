@@ -17,6 +17,7 @@ var server = function() {
 						thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 						views: 18905,
 						watched: true,
+						premium: false,
 						hot: true
 					}
 				]
@@ -31,6 +32,7 @@ var server = function() {
 						thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 						views: 675,
 						watched: false,
+						premium: true,
 						hot: true
 					}
 				]
@@ -45,6 +47,7 @@ var server = function() {
 						thumbnail: 'thumbnails/nakedmom.jpg',
 						views: 1,
 						watched: true,
+						premium: false,
 						hot: false
 					}
 				]
@@ -59,6 +62,7 @@ var server = function() {
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
 						watched: true,
+						premium: true,
 						hot: false
 					}
 				]
@@ -73,6 +77,7 @@ var server = function() {
 						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
 						watched: true,
+						premium: false,
 						hot: false
 					}
 				]
