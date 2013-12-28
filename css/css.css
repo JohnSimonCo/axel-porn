@@ -116,8 +116,8 @@ a {
 .feed-section-title {
     padding-top:10px;
     text-transform:uppercase;
-    font-size:25px;
-    font-weight:200;
+    font-size:30px;
+    font-weight:300;
 }
 
 .feed-video {
@@ -267,6 +267,34 @@ a {
 #premium-close {
     
 }
+
+@media screen and (min-width:1919px) {
+	.standard-center {
+    	max-width:1460px;
+    	margin-left:auto;
+    	margin-right:auto;
+	}
+
+	.large-center {
+	    max-width:1500px;
+	    margin-left:auto;
+	    margin-right:auto;
+	}
+	
+	.feed-left {
+	    width:66%;
+	    padding-left:3%;
+	    float:left;
+	}
+
+	.feed-right {
+	    width:25%;
+	    padding-left:3%;
+	    padding-right:3%;
+	    float:left;
+	}
+}
+
 
 ::-webkit-scrollbar
 {
