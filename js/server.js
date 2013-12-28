@@ -1,9 +1,8 @@
-var people = [
-	{
-		//0
+var people = {
+	axel: {
 		name: 'Axel',
 		title: 'AxXelPorn',
-		description: 'The main star of our humble porsite is Axel. Often apearing alone in his video, he teches you everything there is to knoow, and more, about self-pleasing.'
+		description: 'The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.'
 		image: '',
 		links: [
 			{
@@ -16,8 +15,7 @@ var people = [
 			}
 		]
 	},
-	{
-		//1
+	simon: {
 		name: 'Simon',
 		title: 'SiMmePorn',
 		description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.'
@@ -29,8 +27,7 @@ var people = [
 			}
 		]
 	},
-	{
-		//2
+	sara: {
 		name: 'Sara',
 		title: 'SaRaPorn',
 		description: 'As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.',
@@ -38,12 +35,11 @@ var people = [
 		links: [
 			{
 				name: 'Saras facebook',
-				href: 'http://www.facebook.com/sara.wiberg.12'
+				href: 'http://www.facebook.com/sara.wiberg.18'
 			}
 		]
 	},
-	{
-		//3
+	august: {
 		name: 'August',
 		title: 'aGGePorn',
 		description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.'
@@ -55,8 +51,7 @@ var people = [
 			}
 		],
 	},
-	{
-		//4
+	john: {
 		name: 'John',
 		title: 'JoHnyPorn',
 		description: 'John is our hardcore legend, known for his daring videos. ',
@@ -68,8 +63,8 @@ var people = [
 			}
 		]
 	}
-];
-var person = people[4];
+};
+var person = people.john;
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
@@ -265,7 +260,7 @@ var server = function() {
 			{
 				headline: person.name + ' acting INSANE!',
 				summary: 'Click to watch!',
-				content: 'We are not going to tell you why because we simply can not explain it! Why would anyone do somthing like that, we just can not understand.',
+				content: 'We are not going to tell you why because we simply can\'t explain it! Why would anyone do somthing like that, we just can\'t understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg',
 				href: ''
 			},
@@ -279,7 +274,7 @@ var server = function() {
 			{
 				headline: 'New premium Video!',
 				summary: 'CAUTION! SUPER SEXY!',
-				content: 'We have added a new, mindblowingly sexy video you just can not believe is real! By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
+				content: 'We have added a new, mindblowingly sexy video you just can\'t believe is real! By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg',
 				href: ''
 			},
@@ -307,7 +302,7 @@ var server = function() {
 			{
 				headline: 'Want to be seen?',
 				summary: 'We want new stars!',
-				content: 'If you like beiging seen, we have a offer you simply can not refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here.',
+				content: 'If you like being seen, we have a offer you simply can\'t refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here.',
 				image: 'http://3.bp.blogspot.com/_YvpXQckVIuk/Se7WoQvxv2I/AAAAAAAAAI0/azbZNN41PpA/s200/gold+star+sxc',
 				href: ''
 			}
