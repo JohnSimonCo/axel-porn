@@ -1,4 +1,40 @@
-var person = {name: 'Axel', title: 'AxXel'};
+var people = [
+	{
+		name: 'Axel',
+		title: 'AxXelPorn',
+		links: [
+			{
+				name: 'Axels facebook',
+				href: 'http://www.facebook.com/axel.k.lindgren'
+			},
+			{
+				name: 'Axels youtube',
+				href: 'http://www.youtube.com/user/swifTyBobCaT'
+			}
+		]
+	},
+	{
+		name: 'Simon',
+		title: 'SiMmePorn',
+		links: [
+			{
+				name: 'Simons facebook',
+				href: 'http://www.facebook.com/simon.halvdansson'
+			}
+		]
+	},
+	{
+		name: 'Sara',
+		title: 'SaRaPorn',
+		links: [
+			{
+				name: 'Saras facebook',
+				href: 'http://www.facebook.com/sara.wiberg.18'
+			}
+		]
+	}
+];
+var person = people[2];
 var Section = function(name, populate) {
 	this.name = name;
 	this.populate = populate;
@@ -11,13 +47,14 @@ var server = function() {
 				name: 'Amateur',
 				videos : [
 					{
-						name: name + ' i skogen',
-						description: name + ' runkar sin mamma i skogen',
+						name: person.name + ' i skogen',
+						description: person.name + ' runkar sin mamma i skogen',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 						views: 18905,
 						watched: true,
-						hot: true
+						hot: true,
+						premium: true
 					}
 				]
 			},
@@ -25,13 +62,14 @@ var server = function() {
 				name: 'Sneaky film',
 				videos : [
 					{ 
-						name: name + ' genom nyckelålet',
-						desc: name + 's mammas födelsedagsknull',
+						name: person.name + ' genom nyckelålet',
+						desc: person.name + 's mammas födelsedagsknull',
 						src: 'videos/parentsex.mp4',
 						thumbnail: 'thumbnails/parentsex.jpg',
 						views: 675,
 						watched: false,
-						hot: true
+						hot: true,
+						premium: false
 					}
 				]
 			},
@@ -39,13 +77,14 @@ var server = function() {
 				name: 'MILF',
 				videos : [
 					{
-						name: name + ' i garderoben',
-						description: name + 's mamma byter om',
+						name: person.name + ' i garderoben',
+						description: person.name + 's mamma byter om',
 						src: 'videos/nakedmom.mp4',
 						thumbnail: 'thumbnails/nakedmom.jpg',
 						views: 1,
 						watched: true,
-						hot: false
+						hot: false,
+						premium: true
 					}
 				]
 			},
@@ -53,13 +92,14 @@ var server = function() {
 				name: 'Mature',
 				videos : [
 					{ 
-						name: name + ' på besök',
-						description: name + 's farmor och farfar tagna på bar gärning',
+						name: person.name + ' på besök',
+						description: person.name + 's farmor och farfar tagna på bar gärning',
 						src: 'videos/hotgrandma.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
 						watched: true,
-						hot: false
+						hot: false,
+						premium: false
 					}
 				]
 			},
@@ -67,32 +107,33 @@ var server = function() {
 				name: 'Virgin',
 				videos : [
 					{
-						name: name + ' i badkaret',
-						description: name + ' och syrran på toa',
+						name: person.name + ' i badkaret',
+						description: person.name + ' och syrran på toa',
 						src: 'videos/syrran.mp4',
 						thumbnail: 'thumbnails/syrran.jpg',
 						views: 65,
 						watched: true,
-						hot: false
+						hot: false,
+						premium: false
 					}
 				]
 			}
 		},
 		news: [
 			{
-				headline: name + ' just fucked a goat!',
+				headline: person.name + ' just fucked a goat!',
 				summary: 'TAPED IT HIMSELF',
 				content: 'It\'s maddafakking mental!',
 				image: 'image/goatfuck.jpg'
 			},
 			{
-				headline: name + ' juerked off!',
+				headline: person.name + ' juerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'image/mycum.jpg'
 			},
 			{
-				headline: name + ' did something INSANE!',
+				headline: person.name + ' did something INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can not explain it! Why would anyone do somthing like that, we just can not understand.',
 				image: 'image/insanebehavior.jpg'
@@ -111,19 +152,24 @@ var server = function() {
 				};
 			}),
 			watched: new Section('Most watched', function(video) {
-				if (video.watched && !video.hot) {
+				if (video.watched) {
+					this.videos.push(video);
+				};
+			}),
+			premium: new Section('Premium', function(video) {
+				if (video.premium) {
 					this.videos.push(video);
 				};
 			})
 		},
 		links: [
 			{
-				name: name + '\'s facebook',
-				href: 'http://www.facebook.com/axel.k.lindgren'
+				name: person.name + '\'s facebook',
+				href: person.facebook
 			},
 			{
-				name: name + '\'s youtube',
-				href: 'http://www.youtube.com/user/swifTyBobCaT'
+				name: person.name + '\'s youtube',
+				href: person.youtube
 			}
 		],
 		premium: false
@@ -135,7 +181,10 @@ var server = function() {
 			video.href = '#/video/' + category + '/' + id;
 
 			for(var section in data.sections) {
-				data.sections[section].populate(video);
+				if(!video.assigned) {
+					data.sections[section].populate(video);
+					video.assigned = true;
+				}
 			}
 		}
 	}
