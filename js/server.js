@@ -3,6 +3,8 @@ var people = [
 		//0
 		name: 'Axel',
 		title: 'AxXelPorn',
+		description: 'The main star of our humble porsite is Axel. Often apearing alone in his video, he teches you everything there is to knoow, and more, about self-pleasing.'
+		image: '',
 		links: [
 			{
 				name: 'Axels facebook',
@@ -18,6 +20,8 @@ var people = [
 		//1
 		name: 'Simon',
 		title: 'SiMmePorn',
+		description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.'
+		image: '',
 		links: [
 			{
 				name: 'Simons facebook',
@@ -29,10 +33,12 @@ var people = [
 		//2
 		name: 'Sara',
 		title: 'SaRaPorn',
+		description: 'As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.',
+		image: '',
 		links: [
 			{
 				name: 'Saras facebook',
-				href: 'http://www.facebook.com/sara.wiberg.18'
+				href: 'http://www.facebook.com/sara.wiberg.12'
 			}
 		]
 	},
@@ -40,6 +46,8 @@ var people = [
 		//3
 		name: 'August',
 		title: 'aGGePorn',
+		description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.'
+		image: '',
 		links: [
 			{
 				name: 'Agges facebook',
@@ -51,6 +59,8 @@ var people = [
 		//4
 		name: 'John',
 		title: 'JoHnyPorn',
+		description: 'John is our hardcore legend, known for his daring videos. ',
+		image: '',
 		links: [
 			{
 				name: 'Johns facebook',
@@ -239,8 +249,8 @@ var server = function() {
 		defaultCategory: 'amateur',
 		news: [
 			{
-				headline: person.name + ' just fucked a goat!',
-				summary: 'TAPED IT HIMSELF',
+				headline: person.name + ' fucked a goat!',
+				summary: 'TAPED IT HIMSELF!',
 				content: 'It\'s maddafakking mental!',
 				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg',
 				href: ''
@@ -253,7 +263,7 @@ var server = function() {
 				href: ''
 			},
 			{
-				headline: person.name + ' did something INSANE!',
+				headline: person.name + ' acting INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can not explain it! Why would anyone do somthing like that, we just can not understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg',
@@ -282,7 +292,7 @@ var server = function() {
 			},
 			{
 				headline: 'Inspire us!',
-				summary: 'This is your chance',
+				summary: 'This is your chance!',
 				content: 'By going premium you will be able to contact us personally and tell us about your personal preferences. We lissen to our visitors and make changes. Dont miss your chance to be a part of the developement of this sight.',
 				image: 'http://www.weareprivate.net/blog/wp-content/uploads/fetish-chair.jpg',
 				href: ''
