@@ -11,6 +11,7 @@ pornControllers.controller('DefaultController', ['$scope',
 
 		$scope.togglePremiumSignup = function(state) {
 			$scope.premiumSignup = state;
+			setScrolling(!state);
 		};
 
 	}
