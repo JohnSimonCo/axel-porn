@@ -1,0 +1,24 @@
+<div ng-show="{{found}}">
+
+    <div ng-show="{{found}}" class="standard-center">
+    
+        <video class="video-player" controls>
+            <source ng-src="{{video.src}}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="video-title">{{video.name}}</div>
+        <div class="video-description">{{video.description}}</div>
+        
+    
+    </div>
+    
+</div>
+
+
+<div ng-hide="{{found}}">
+    
+    <div class="404 standard-center">404 Page not found, this porn video is not yet created... :'(</div>
+    
+</div>
+

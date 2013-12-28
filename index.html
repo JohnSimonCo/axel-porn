@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="pornApp">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="css/css.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel='stylesheet' type='text/css'>
+
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+	<script src="lib/jquery.js"></script>
+	
+	<script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/server.js"></script>
+    
+	<title>AxXxelPorn</title>
+</head>
+<body ng-controller="PremiumController">
+
+    <div class="header-container">
+        <header class="header large-center">
+            <a class="header-title" href="#">Axxxelporn</a>
+            
+            <nav class="header-nav">
+                
+                <a href="#/categories" class="header-item">Categories</a>
+                <a href="#/links" class="header-item">Links</a>
+                <a href="#/about" class="header-item">About</a>
+                <a ng-click="goPremium()" class="header-item" id="premium-button">Go Premium</a>
+                
+            </nav>
+        </header>
+    </div>
+    
+    <div class="filler"></div>
+    
+    <div ng-view></div>
+    
+    <div class="filler"></div>
+    
+    <footer class="footer">
+    	<div class="large-center">
+    		<div class="footer-text">
+    			By using AxXxelPorn you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can cancel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 Pornstartnetwork Inc.
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>
