@@ -53,13 +53,8 @@ var server = function() {
 						thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 						views: 18905,
 						watched: true,
-<<<<<<< HEAD
-						premium: false,
-						hot: true
-=======
 						hot: true,
 						premium: true
->>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -73,13 +68,8 @@ var server = function() {
 						thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 						views: 675,
 						watched: false,
-<<<<<<< HEAD
-						premium: true,
-						hot: true
-=======
 						hot: true,
 						premium: true
->>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -93,13 +83,8 @@ var server = function() {
 						thumbnail: 'thumbnails/nakedmom.jpg',
 						views: 1,
 						watched: true,
-<<<<<<< HEAD
-						premium: false,
-						hot: false
-=======
 						hot: false,
 						premium: true
->>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -112,15 +97,9 @@ var server = function() {
 						src: 'videos/hotgrandma.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
-<<<<<<< HEAD
-						watched: true,
-						premium: true,
-						hot: false
-=======
 						watched: false,
 						hot: true,
 						premium: false
->>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			},
@@ -134,13 +113,8 @@ var server = function() {
 						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
 						watched: true,
-<<<<<<< HEAD
-						premium: false,
-						hot: false
-=======
 						hot: false,
 						premium: false
->>>>>>> dd570c9773ace9388157792294d3bd60ef413d3d
 					}
 				]
 			}
