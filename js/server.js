@@ -56,7 +56,7 @@ var server = function() {
 						name: name + ' på besök',
 						description: name + 's farmor och farfar tagna på bar gärning',
 						src: 'videos/hotgrandma.mp4',
-						thumbnail: 'thumbnails/hotgrandma.jpg',
+						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
 						watched: true,
 						hot: false
