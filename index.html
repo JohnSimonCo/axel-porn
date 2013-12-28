@@ -26,7 +26,7 @@
                 
                     <div class="feed-divider"></div>
             
-                    <div class="feed-section-title">{{section.name}}</div>
+                    <div class="feed-section-title" ng-class="{premium: section.name == 'Premium'}">{{section.name}}</div>
                     
                     <div class="feed-video" ng-repeat="video in section.videos track by $index">
 
@@ -160,7 +160,7 @@
                 <a href="#/categories" class="header-item">Categories</a>
                 <a href="#/links" class="header-item">Links</a>
                 <a href="#/about" class="header-item">About</a>
-                <a ng-click="togglePremiumSignup(true)" class="header-item" id="premium-button">Go Premium</a>
+                <a ng-click="togglePremiumSignup(true)" class="header-item premium">Go Premium</a>
                 
             </nav>
         </header>

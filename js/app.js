@@ -38,19 +38,3 @@ pornApp.config(['$routeProvider',
         redirectTo: '/feed'
       });
   }]);
-var setScrolling = function(scrolling) {
-  var scroll = scrolling ? allowScrolling() : preventScrolling();
-};
-preventScrolling = function() {
-  $('html, body').css({
-    'overflow': 'hidden',
-    'height': '100%'
-  })
-}
-
-allowScrolling = function() {
-  $('html, body').css({
-    'overflow': 'auto',
-    'height': 'auto'
-  })
-}
