@@ -13,8 +13,143 @@
 	<script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/server.js"></script>
+
+    <title>AxXxelPorn</title>
+
+    <script type="text/ng-template" id="partials/feed.html">
+        <div class="feed-container standard-center">
+
+            <div class="feed-left">
+
+                <div class="feed-title">Videos</div>
+                <div class="feed-section" ng-repeat="section in sections">
+                
+                    <div class="feed-divider"></div>
+            
+                    <div class="feed-section-title">{{section.name}}</div>
+                    
+                    <div class="feed-video" ng-repeat="video in section.videos track by $index">
+
+                        <a ng-href="{{video.href}}">
+                            <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
+                        </a>
+                        
+                        <a ng-href="{{video.href}}">
+                            <div class="feed-video-title">{{video.name}}</div>
+                        </a>
+                        
+                        <div class="feed-video-views">VIEWS: {{video.views}}</div>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="feed-right">
+                
+                <div class="news-title">News</div>
+                
+                <div class="news-container">
+                
+                    <a ng-href="{{article.href}}" class="news-item" ng-repeat="article in news">
+                        
+                        <div class="news-headline">{{article.headline}}</div>
+                        <div class="news-summary">{{article.summary}}</div>
+                        
+                    </a>
+                
+                </div>
+
+            </div>
+        
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="partials/video.html">
+        <div ng-show="{{found && premium()}}">
+
+            <div ng-show="{{found}}" class="standard-center">
+            
+                <video class="video-player" controls>
+                    <source ng-src="{{video.src}}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <div class="video-title">{{video.name}}</div>
+                <div class="video-description">{{video.description}}</div>
+                
+            
+            </div>
+        
+        </div>
+
+        <h3>{{premium()}}</h3>
+
+        <div ng-hide="{{found && premium()}}">
+
+            <h3>You need premium bro</h3>
+            
+        </div>
+
+
+        <div ng-hide="{{found}}">
+            
+            <div class="404 standard-center">404 Page not found, this porn video is not yet created... :(</div>
+            
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="partials/article.html">
+        <div ng-show="{{found}}">
+
+            <h3>{{article.headline}}</h3>
+            <img ng-src="{{article.image}}" />
+            <p>{{article.content}}</p>
+
+        </div>
+        <div ng-hide="{{found}}"><h3>404 not found :(</h3></div>
+    </script>
+
+    <script type="text/ng-template" id="partials/category.html">
+        <ul ng-show="{{found}}">
+            <h3>{{category.name}}</h3>
+            <li ng-repeat="video in category.videos">
+                <a ng-href="{{video.href}}">
+                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
+                </a>
+                        
+                <a ng-href="{{video.href}}">
+                    <div class="feed-video-title">{{video.name}}</div>
+                </a>
+                
+                <div class="feed-video-views">VIEWS: {{video.views}}</div>
+            </li>
+        </ul>
+        <div ng-hide="{{found}}"><h3>404 not found :(</h3></div>
+    </script>
+
+    <script type="text/ng-template" id="partials/categories.html">
+        <ul>
+            <li ng-repeat="category in categories">
+                <a href="{{category.href}}"><h3>{{category.name}}</h3></a>
+            </li>
+        </ul>
+    </script>
+
+    <script type="text/ng-template" id="partials/about.html">
+        <div class="about about-center">
     
-	<title>AxXxelPorn</title>
+            AxXxelporn is a project designed to help people all around the world access our wide collection of Axel porn. We consider it a basic human  right to have access to pornographic content with Axel in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.
+    
+        </div>
+    </script>
+    
+    <script type="text/ng-template" id="partials/links.html">
+        <ul>
+            <li ng-repeat="link in links">
+                <a ng-href="{{link.href}}"><h3>{{link.name}}</h3></a>
+            </li>
+        </ul>
+    </script>
+    
 </head>
 <body ng-controller="PremiumController">
 
