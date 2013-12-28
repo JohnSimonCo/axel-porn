@@ -34,7 +34,7 @@ var people = [
 		]
 	}
 ];
-var person = people[2];
+var person = people[0];
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
