@@ -143,7 +143,7 @@ var server = function() {
 				videos : [
 					{
 						name: person.name + ' provar bondage',
-						description: Familjeutflykten,
+						description: 'Familjeutflykten',
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://25.media.tumblr.com/2d04e680e3a764d56691c79066d6ac50/tumblr_mkqmiwyBpV1qe7kn9o1_500.jpg',
 						views: 32,
