@@ -1,5 +1,6 @@
 var people = [
 	{
+		//0
 		name: 'Axel',
 		title: 'AxXelPorn',
 		links: [
@@ -14,6 +15,7 @@ var people = [
 		]
 	},
 	{
+		//1
 		name: 'Simon',
 		title: 'SiMmePorn',
 		links: [
@@ -24,6 +26,7 @@ var people = [
 		]
 	},
 	{
+		//2
 		name: 'Sara',
 		title: 'SaRaPorn',
 		links: [
@@ -34,26 +37,29 @@ var people = [
 		]
 	},
 	{
-<<<<<<< HEAD
-		name: 'Agge',
-		title: 'AgGePorn',
+		//3
+		name: 'August',
+		title: 'aGGePorn',
 		links: [
 			{
 				name: 'Agges facebook',
 				href: 'http://www.facebook.com/agge21?ref=ts&fref=ts'
-=======
+			}
+		],
+	},
+	{
+		//4
 		name: 'John',
 		title: 'JoHnyPorn',
 		links: [
 			{
 				name: 'Johns facebook',
 				href: 'http://www.facebook.com/john.rapp.3'
->>>>>>> 11a9a241412e4d5436d05c08046aafd1cc17d963
 			}
 		]
 	}
 ];
-	var people2 = [
+var people2 = [
 	{
 		name: 'August',
 		title: 'aGGePorn',
@@ -69,7 +75,7 @@ var people = [
 		]
 	}
 ];
-var person = people2 [0];
+var person = people[3];
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
