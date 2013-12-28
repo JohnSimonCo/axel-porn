@@ -21,10 +21,10 @@ a {
 }
 
 .header-title {
-        cursor:pointer;
-        display:block;
-        float:left;
-        padding-top:10px;
+    cursor:pointer;
+    display:block;
+    float:left;
+    padding-top:10px;
     font-weight:200;
     color:#c0392b;
     font-size:50px;
@@ -61,15 +61,15 @@ a {
 
 .header-item {
     text-decoration:none;
-        color:#DDD;
-        display:block;
-        cursor:pointer;
-        padding-right:10px;
-        padding-left:10px;
-        font-weight:200;
-        font-size:28px;
-        padding-top:22px;
-        height:58px;
+	color:#DDD;
+	display:block;
+	cursor:pointer;
+	padding-right:10px;
+	padding-left:10px;
+	font-weight:200;
+	font-size:28px;
+	padding-top:22px;
+	height:58px;
     transition:background-color 0.2s;
     float:left;
 }
@@ -240,7 +240,12 @@ a {
 }
 
 #premium-signup-container {
-    background-color: #000;
+	position: relative;  
+}
+
+#premium-signup-container:before {
+	position:absolute;
+    background-color: rgba(10,10,10,0.9);
     opacity: .8;
     position: fixed;
     top: 0px;
@@ -248,17 +253,25 @@ a {
     width: 100%;
     height: 100%;
     padding: 10px;
-    z-index: 100;
-    
-            
+    z-index: 10;    
 }
+
+
 #premium-signup {
+	position:absolute;
+	top:20px;
     background-color: #aaa;
     opacity: 1;
     width: 800px;
-    margin: auto;
-    z-index: 101;
+    height:500px;
+    z-index: 20;
+    overflow: hidden;
+  	background: #eee;
+  	margin: 0 auto;
+  	left: 0;
+  	right: 0;
 }
+
 #premium-close {
     
 }
