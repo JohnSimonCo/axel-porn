@@ -43,6 +43,7 @@ var people = [
 			}
 		]
 	}
+];
 	var people2 = [
 	{
 		name: 'August',
@@ -57,7 +58,7 @@ var people = [
 				href: 'http://www.youtube.com/user/swifTyBobCaT'
 			}
 		]
-	},
+	}
 ];
 var person = people2 [0];
 var Section = function(name, assign) {
