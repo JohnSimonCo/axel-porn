@@ -32,6 +32,16 @@ var people = [
 				href: 'http://www.facebook.com/sara.wiberg.18'
 			}
 		]
+	},
+	{
+		name: 'Agge',
+		title: 'AgGePorn',
+		links: [
+			{
+				name: 'Agges facebook',
+				href: 'http://www.facebook.com/agge21?ref=ts&fref=ts'
+			}
+		]
 	}
 ];
 var person = people[2];
