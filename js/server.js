@@ -43,8 +43,23 @@ var people = [
 			}
 		]
 	}
+	var people2 = [
+	{
+		name: 'August',
+		title: 'aGGePorn',
+		links: [
+			{
+				name: 'Augusts facebook',
+				href: 'http://www.facebook.com/axel.k.lindgren'
+			},
+			{
+				name: 'Augusts youtube',
+				href: 'http://www.youtube.com/user/swifTyBobCaT'
+			}
+		]
+	},
 ];
-var person = people[3];
+var person = people2 [0];
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
