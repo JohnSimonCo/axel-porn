@@ -28,7 +28,7 @@ var server = function() {
 						name: name + ' genom nyckelålet',
 						desc: name + 's mammas födelsedagsknull',
 						src: 'videos/parentsex.mp4',
-						thumbnail: 'thumbnails/parentsex.jpg',
+						thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 						views: 675,
 						watched: false,
 						hot: true
@@ -70,7 +70,7 @@ var server = function() {
 						name: name + ' i badkaret',
 						description: name + ' och syrran på toa',
 						src: 'videos/syrran.mp4',
-						thumbnail: 'thumbnails/syrran.jpg',
+						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
 						watched: true,
 						hot: false
@@ -83,25 +83,31 @@ var server = function() {
 				headline: name + ' just fucked a goat!',
 				summary: 'TAPED IT HIMSELF',
 				content: 'It\'s maddafakking mental!',
-				image: 'image/goatfuck.jpg'
+				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg'
 			},
 			{
 				headline: name + ' juerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
-				image: 'image/mycum.jpg'
+				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg'
 			},
 			{
 				headline: name + ' did something INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can not explain it! Why would anyone do somthing like that, we just can not understand.',
-				image: 'image/insanebehavior.jpg'
+				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg'
 			},
 			{
 				headline: 'You have done well',
 				summary: 'More views per day than ever!',
 				content: 'Today we can proudly present new all time records! We have had 2527583 unique visitors this month, an average of 84252 unique visitors a day! Our most popular clip is amazlingly still' + name + 'i skogen!',
-				image: 'image/visitors.jpg'
+				image: 'http://www.colourbox.com/preview/4297446-685999-vector-diagram-with-red-arrow-going-up.jpg'
+			},
+			{
+				headline: 'GO PREMIUM',
+				summary: 'Unluck exclusive videos!',
+				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
+				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
 			}
 		],
 		sections: {
