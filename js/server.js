@@ -59,7 +59,7 @@ var people = [
 		]
 	}
 ];
-var person = people[3];
+var person = people[4];
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
@@ -276,7 +276,7 @@ var server = function() {
 			{
 				headline: 'GO PREMIUM',
 				summary: 'Unluck exclusive videos!',
-				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
+				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more.',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg',
 				href: ''
 			},
@@ -297,7 +297,7 @@ var server = function() {
 			{
 				headline: 'Want to be seen?',
 				summary: 'We want new stars!',
-				content: 'If you like beiging seen, we have a offer you simply can not refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here',
+				content: 'If you like beiging seen, we have a offer you simply can not refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here.',
 				image: 'http://3.bp.blogspot.com/_YvpXQckVIuk/Se7WoQvxv2I/AAAAAAAAAI0/azbZNN41PpA/s200/gold+star+sxc',
 				href: ''
 			}
