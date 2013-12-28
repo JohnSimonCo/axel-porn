@@ -128,7 +128,7 @@ var server = function() {
 					},
 					{
 						name: 'Morgonrunk',
-						description: person.name + 'på toan',
+						description: person.name + ' på toan',
 						src: 'videos/morgonrunk.mp4',
 						thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
 						views: 18,
@@ -142,13 +142,13 @@ var server = function() {
 				name: 'Fetish',
 				videos : [
 					{
-						name: person.name + ' i badkaret',
-						description: person.name + ' och syrran på toa',
+						name: person.name + ' provar bondage',
+						description: Familjeutflykten,
 						src: 'videos/syrran.mp4',
-						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
-						views: 65,
+						thumbnail: 'http://25.media.tumblr.com/2d04e680e3a764d56691c79066d6ac50/tumblr_mkqmiwyBpV1qe7kn9o1_500.jpg',
+						views: 32,
 						watched: true,
-						hot: false,
+						hot: true,
 						premium: false
 					}
 				]
@@ -157,14 +157,14 @@ var server = function() {
 				name: 'Animal',
 				videos : [
 					{
-						name: person.name + ' i badkaret',
-						description: person.name + ' och syrran på toa',
+						name: person.name + ' on farm',
+						description: Dogs, tools and horses,
 						src: 'videos/syrran.mp4',
-						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
-						views: 65,
+						thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
+						views: 78,
 						watched: true,
 						hot: false,
-						premium: false
+						premium: true
 					}
 				]
 			}
@@ -175,54 +175,63 @@ var server = function() {
 				summary: 'TAPED IT HIMSELF',
 				content: 'It\'s maddafakking mental!',
 				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg'
+				href: ''
 			},
 			{
 				headline: person.name + ' juerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg'
+				href: ''
 			},
 			{
 				headline: person.name + ' did something INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can not explain it! Why would anyone do somthing like that, we just can not understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg'
+				href: ''
 			},
 			{
 				headline: 'You have done well',
 				summary: 'More views per day than ever!',
 				content: 'Today we can proudly present new all time records! We have had 2527583 unique visitors this month, which means an average of 84252 unique visitors a day! Our most popular clip is amazlingly still' + name + 'i skogen!',
 				image: 'http://www.colourbox.com/preview/4297446-685999-vector-diagram-with-red-arrow-going-up.jpg'
+				href: ''
 			},
 			{
 				headline: 'New premium Video!',
 				summary: 'CAUTION! SUPER SEXY!',
 				content: 'We have added a new, mindblowingly sexy video you just can not believe is real! By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
+				href: ''
 			},
 			{
 				headline: 'GO PREMIUM',
 				summary: 'Unluck exclusive videos!',
 				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
+				href: ''
 			},
 			{
 				headline: 'Inspire us!',
 				summary: 'This is your chance',
 				content: 'By going premium you will be able to contact us personally and tell us about your personal preferences. We lissen to our visitors and make changes. Dont miss your chance to be a part of the developement of this sight.',
 				image: 'http://www.weareprivate.net/blog/wp-content/uploads/fetish-chair.jpg'
+				href: ''
 			},
 			{
 				headline: 'New premium video!',
 				summary: 'How to fap like a GOD!',
 				content: 'Learn about this amazing new method! Watch him please himself like no man before him. He will teach you the tecknics you did not even no exist!',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
+				href: ''
 			},
 			{
 				headline: 'Want to be seen?',
 				summary: 'We want new stars!',
 				content: 'If you like beiging seen, we have a offer you simply can not refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here',
 				image: 'http://3.bp.blogspot.com/_YvpXQckVIuk/Se7WoQvxv2I/AAAAAAAAAI0/azbZNN41PpA/s200/gold+star+sxc'
+				href: ''
 			}
 		],
 		sections: {
