@@ -253,12 +253,12 @@ a {
 
 #premium-signup {
 	z-index:20;
-	position:relative;
-	top:20px;
+	position:fixed;
 	margin:auto;
-    background-color: #aaa;
+	left: calc(50% - 400px);
+	top:20px;
+	background-color: #aaa;
     width: 800px;
-    height:500px;
 }
 
 #premium-close {
