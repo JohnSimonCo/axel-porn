@@ -34,7 +34,7 @@ var people = [
 		]
 	}
 ];
-var person = people[1];
+var person = people[2];
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
@@ -115,6 +115,56 @@ var server = function() {
 						watched: true,
 						hot: false,
 						premium: false
+					},
+					{
+						name: person.name + '\'s tight pussy',
+						description: person.name + ' visiting a friend',
+						src: 'videos/friendsforever.mp4',
+						thumbnail: 'http://www.demotivationalposters.net/lesbian-vegetarians-demotivational-posters-25845.html',
+						views: 67,
+						watched: true,
+						hot: true,
+						premium: false
+					},
+					{
+						name: 'Morgonrunk',
+						description: person.name + 'på toan',
+						src: 'videos/morgonrunk.mp4',
+						thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
+						views: 18,
+						watched: true,
+						hot: false,
+						premium: false
+					}
+				]
+			},
+			Fetish: {
+				name: 'Fetish',
+				videos : [
+					{
+						name: person.name + ' i badkaret',
+						description: person.name + ' och syrran på toa',
+						src: 'videos/syrran.mp4',
+						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
+						views: 65,
+						watched: true,
+						hot: false,
+						premium: false
+					}
+				]
+			},
+			Animal: {
+				name: 'Animal',
+				videos : [
+					{
+						name: person.name + ' i badkaret',
+						description: person.name + ' och syrran på toa',
+						src: 'videos/syrran.mp4',
+						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
+						views: 65,
+						watched: true,
+						hot: false,
+						premium: false
 					}
 				]
 			}
@@ -146,7 +196,7 @@ var server = function() {
 			},
 			{
 				headline: 'New premium Video!',
-				summary: 'CAUTION SUPER SEXY!',
+				summary: 'CAUTION! SUPER SEXY!',
 				content: 'We have added a new, mindblowingly sexy video you just can not believe is real! By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
 			},
