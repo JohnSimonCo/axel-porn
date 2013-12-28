@@ -11,7 +11,7 @@ pornControllers.controller('DefaultController', ['$scope',
 
 		$scope.togglePremiumSignup = function(state) {
 			$scope.premiumSignup = state;
-		};	
+		};
 	}
 ])
 
@@ -36,16 +36,9 @@ pornControllers.controller('ArticleController', ['$scope', '$routeParams',
 	}
 ]);
 
-pornControllers.controller('CategoryController', ['$scope', '$routeParams', 
+pornControllers.controller('CategoryController', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
-		$scope.category = server.categories[$routeParams.category];
-		$scope.found = typeof $scope.category !== 'undefined';
-	}
-]);
-	
-pornControllers.controller('CategoriesController', ['$scope', 
-	function($scope) {
-		$scope.categories = server.categories;
+		$scope.currentCategory = server.categories[$routeParams.category] || server.categories[0];
 	}
 ]);
 	
