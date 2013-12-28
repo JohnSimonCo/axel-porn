@@ -181,7 +181,7 @@ var server = function() {
 				headline: person.name + ' juerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
-				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg'
+				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg',
 				href: ''
 			},
 			{
