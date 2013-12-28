@@ -2,7 +2,7 @@ var people = {
 	axel: {
 		name: 'Axel',
 		title: 'AxXelPorn',
-		description: 'The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.'
+		description: 'The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.',
 		image: '',
 		links: [
 			{
@@ -18,7 +18,7 @@ var people = {
 	simon: {
 		name: 'Simon',
 		title: 'SiMmePorn',
-		description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.'
+		description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.',
 		image: '',
 		links: [
 			{
@@ -42,7 +42,7 @@ var people = {
 	august: {
 		name: 'August',
 		title: 'aGGePorn',
-		description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.'
+		description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.',
 		image: '',
 		links: [
 			{

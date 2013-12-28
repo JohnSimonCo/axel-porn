@@ -15,7 +15,7 @@
     <script src="js/controllers.js"></script>
     <script src="js/server.js"></script>
 
-    <title ng-bind="person.title">Pornstartnetwork</title>
+    <title ng-bind="person.title">{{people.company}}</title>
 
     <script type="text/ng-template" id="partials/feed.html">
         <div class="feed-container standard-center">
@@ -182,7 +182,7 @@
     <footer class="footer">
             <div class="large-center">
                     <div class="footer-text">
-                            By using {{person.title}} you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can\'t\'t can\'t\'tcel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 Pornstartnetwork Inc.
+                            By using {{person.title}} you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can\'t\'t can\'t\'tcel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 {{people.company}} Inc.
                     </div>
             </div>
     </footer>
