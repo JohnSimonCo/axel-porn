@@ -29,7 +29,7 @@ var people = [
 		links: [
 			{
 				name: 'Saras facebook',
-				href: 'http://www.facebook.com/sara.wiberg.12'
+				href: 'http://www.facebook.com/sara.wiberg.18'
 			}
 		]
 	}
@@ -149,25 +149,25 @@ var server = function() {
 				summary: 'We have added a new, mindblowingly sexy video you just can not believe is real!',
 				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
-			}
+			},
 			{
 				headline: 'GO PREMIUM',
 				summary: 'Unluck exclusive videos!',
 				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
-			}
+			},
 			{
 				headline: 'Inspire us!',
 				summary: 'This is your chance',
 				content: 'By going premium you will be able to contact us personally and tell us about your personal preferences. We lissen to our visitors and make changes. Dont miss your chance to be a part of the developement of this sight.',
 				image: 'http://www.weareprivate.net/blog/wp-content/uploads/fetish-chair.jpg'
-			}
+			},
 			{
 				headline: 'New premium video!',
 				summary: 'How to fap like a GOD!',
 				content: 'Learn about this amazing new method! Watch him please himself like no man before him. He will teach you the tecknics you did not even no exist!',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
-			}
+			},
 			{
 				headline: 'Want to be seen?',
 				summary: 'We want new stars!',
