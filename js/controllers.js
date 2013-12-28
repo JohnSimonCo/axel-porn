@@ -39,7 +39,7 @@ pornControllers.controller('ArticleController', ['$scope', '$routeParams',
 pornControllers.controller('CategoryController', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.categories = server.categories;
-		$scope.currentCategory = server.categories[$routeParams.category] || server.categories[0];
+		$scope.currentCategory = server.categories[$routeParams.categoryId] || server.categories[server.defaultCategory];
 	}
 ]);
 	

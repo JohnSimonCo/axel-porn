@@ -80,7 +80,7 @@ var server = function() {
 						feed: true,
 						watched: true,
 						hot: true,
-						premium: true
+						premium: true,
 					},
 					{
 						name: person.name + '\'s första runkvideo',
@@ -192,7 +192,7 @@ var server = function() {
 					}
 				]
 			},
-			Fetish: {
+			fetish: {
 				name: 'Fetish',
 				videos : [
 					{
@@ -208,7 +208,7 @@ var server = function() {
 					}
 				]
 			},
-			Animal: {
+			animal: {
 				name: 'Animal',
 				videos : [
 					{
@@ -236,6 +236,7 @@ var server = function() {
 				]
 			}
 		},
+		defaultCategory: 'amateur',
 		news: [
 			{
 				headline: person.name + ' just fucked a goat!',

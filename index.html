@@ -108,14 +108,14 @@
 
     <script type="text/ng-template" id="partials/category.html">
 
-        <ul class="standard-list">
-            <li ng-repeat="category in categories">
+        <ul>
+            <li class="standard-list" ng-repeat="category in categories">
                 <a href="{{category.href}}"><h3>{{category.name}}</h3></a>
             </li>
         </ul>
         <ul>
             <h3>{{currentCategory.name}}</h3>
-            <li ng-repeat="video in currentCategory.videos">
+            <li class="standard-list" ng-repeat="video in currentCategory.videos">
                 <a ng-href="{{video.href}}">
                     <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
                 </a>
