@@ -9,17 +9,10 @@ pornControllers.controller('DefaultController', ['$scope',
                         server.premium = true;
                 };
 
-<<<<<<< HEAD
                 $scope.togglePremiumSignup = function(state) {
                         $scope.premiumSignup = state;
                         setScrolling(!state);
                 };
-=======
-		$scope.togglePremiumSignup = function(state) {
-			$scope.premiumSignup = state;
-			setScrolling(!state);
-		};
->>>>>>> 42603111620d777284ab3c5271cf7b9feaf7ee0c
 
         }
 ])
