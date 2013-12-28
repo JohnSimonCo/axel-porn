@@ -1,13 +1,12 @@
 var pornControllers = angular.module('pornControllers', []);
  
-pornControllers.controller('PremiumController', ['$scope',
+pornControllers.controller('DefaultController', ['$scope',
 	function ($scope) {
-		$scope.premium = function(){return server.premium;};
+		$scope.premium = function(){ return server.premium; };
 		$scope.goPremium = function() {
 			server.premium = true;
-			//$scope.$apply(function() {
-			//});
 		};
+		$scope.person = server.person;
 	}
 ])
 

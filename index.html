@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="pornApp">
+<html ng-app="pornApp" ng-controller="DefaultController">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
@@ -81,8 +81,6 @@
         
         </div>
 
-        <h3>{{premium()}}</h3>
-
         <div ng-hide="found && premium()">
 
             <h3>You need premium bro</h3>
@@ -151,7 +149,7 @@
     </script>
     
 </head>
-<body ng-controller="PremiumController">
+<body>
 
     <div class="header-container">
         <header class="header large-center">

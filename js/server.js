@@ -1,4 +1,4 @@
-var name = 'Simon';
+var person = {name: 'Axel', title: 'AxXel'};
 var Section = function(name, populate) {
 	this.name = name;
 	this.populate = populate;
