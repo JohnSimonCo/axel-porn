@@ -52,6 +52,7 @@ var server = function() {
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 						views: 18905,
+						feed: true,
 						watched: true,
 						hot: true,
 						premium: true
@@ -62,6 +63,7 @@ var server = function() {
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://cdn01.nyheter24.se/9b24e4c10802021d01/2012/11/09/767899/sp0bbfc4.jpg',
 						views: 18905,
+						feed: true,
 						watched: true,
 						hot: true,
 						premium: true
@@ -72,6 +74,7 @@ var server = function() {
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.1clickcd.com/files/NAS4/covers/art-226267-1367482051.jpg',
 						views: 18905,
+						feed: true,
 						watched: true,
 						hot: false,
 						premium: false
@@ -87,6 +90,7 @@ var server = function() {
 						src: 'videos/parentsex.mp4',
 						thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 						views: 675,
+						feed: true,
 						watched: false,
 						hot: true,
 						premium: true
@@ -102,6 +106,7 @@ var server = function() {
 						src: 'videos/nakedmom.mp4',
 						thumbnail: 'http://dailykimchi.com/wp-content/uploads/2011/09/chinese-girls-publicly-changing-clothes-on-shanghai-metro-01.jpg',
 						views: 1,
+						feed: true,
 						watched: true,
 						hot: false,
 						premium: true
@@ -117,6 +122,7 @@ var server = function() {
 						src: 'videos/hotgrandma.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
+						feed: true,
 						watched: false,
 						hot: true,
 						premium: false
@@ -132,6 +138,7 @@ var server = function() {
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
+						feed: true,
 						watched: true,
 						hot: false,
 						premium: false
@@ -142,6 +149,7 @@ var server = function() {
 						src: 'videos/friendsforever.mp4',
 						thumbnail: 'http://diyvagina.com/wp-content/uploads/2013/02/meat-fleshlight-pussy.jpg',
 						views: 67,
+						feed: true,
 						watched: true,
 						hot: true,
 						premium: false
@@ -152,6 +160,7 @@ var server = function() {
 						src: 'videos/morgonrunk.mp4',
 						thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
 						views: 18,
+						feed: true,
 						watched: true,
 						hot: false,
 						premium: false
@@ -165,8 +174,9 @@ var server = function() {
 						name: person.name + ' provar bondage',
 						description: 'Familjeutflykten',
 						src: 'videos/syrran.mp4',
-						thumbnail: 'http://25.media.tumblr.com/2d04e680e3a764d56691c79066d6ac50/tumblr_mkqmiwyBpV1qe7kn9o1_500.jpg',
+						thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
 						views: 32,
+						feed: true,
 						watched: true,
 						hot: true,
 						premium: false
@@ -182,6 +192,7 @@ var server = function() {
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
 						views: 78,
+						feed: true,
 						watched: true,
 						hot: false,
 						premium: true
@@ -192,6 +203,7 @@ var server = function() {
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
 						views: 78,
+						feed: true,
 						watched: true,
 						hot: true,
 						premium: false
