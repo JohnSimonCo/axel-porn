@@ -64,9 +64,9 @@
     </script>
 
     <script type="text/ng-template" id="partials/video.html">
-        <div ng-show="{{found && premium()}}">
+        <div ng-show="found && premium()">
 
-            <div ng-show="{{found}}" class="standard-center">
+            <div ng-show="found" class="standard-center">
             
                 <video class="video-player" controls>
                     <source ng-src="{{video.src}}" type="video/mp4">
@@ -83,7 +83,7 @@
 
         <h3>{{premium()}}</h3>
 
-        <div ng-hide="{{found && premium()}}">
+        <div ng-hide="found && premium()">
 
             <h3>You need premium bro</h3>
             
