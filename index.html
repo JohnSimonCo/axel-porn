@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="pornApp">
+<html ng-app="pornApp" ng-controller="DefaultController">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
@@ -8,13 +8,13 @@
 
     <script src="lib/angular.js"></script>
     <script src="lib/angular-route.js"></script>
-	<script src="lib/jquery.js"></script>
-	
-	<script src="js/app.js"></script>
+        <script src="lib/jquery.js"></script>
+        
+        <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/server.js"></script>
 
-    <title>AxXxelPorn</title>
+    <title ng-bind="person.title">Pornstartnetwork</title>
 
     <script type="text/ng-template" id="partials/feed.html">
         <div class="feed-container standard-center">
@@ -64,7 +64,7 @@
     </script>
 
     <script type="text/ng-template" id="partials/video.html">
-        <div ng-show="found && premium()">
+        <div ng-show="found && (premium() || !video.premium)">
 
             <div ng-show="found" class="standard-center">
             
@@ -81,16 +81,14 @@
         
         </div>
 
-        <h3>{{premium()}}</h3>
-
-        <div ng-hide="found && premium()">
+        <div ng-show="found && (video.premium && !premium())">
 
             <h3>You need premium bro</h3>
             
         </div>
 
 
-        <div ng-hide="{{found}}">
+        <div ng-hide="found">
             
             <div class="404 standard-center">404 Page not found, this porn video is not yet created... :(</div>
             
@@ -137,7 +135,7 @@
     <script type="text/ng-template" id="partials/about.html">
         <div class="about about-center">
     
-            AxXxelporn is a project designed to help people all around the world access our wide collection of Axel porn. We consider it a basic human  right to have access to pornographic content with Axel in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.
+            {{person.title}} is a project designed to help people all around the world access our wide collection of {{person.name}} porn. We consider it a basic human  right to have access to pornographic content with  in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.
     
         </div>
     </script>
@@ -151,35 +149,43 @@
     </script>
     
 </head>
-<body ng-controller="PremiumController">
+<body>
 
     <div class="header-container">
         <header class="header large-center">
-            <a class="header-title" href="#">Axxxelporn</a>
+            <a class="header-title" href="#">{{person.title}}</a>
             
             <nav class="header-nav">
                 
                 <a href="#/categories" class="header-item">Categories</a>
                 <a href="#/links" class="header-item">Links</a>
                 <a href="#/about" class="header-item">About</a>
-                <a ng-click="goPremium()" class="header-item" id="premium-button">Go Premium</a>
+                <a ng-click="togglePremiumSignup(true)" class="header-item" id="premium-button">Go Premium</a>
                 
             </nav>
         </header>
     </div>
+
+    <div id="premium-signup-container" ng-show="premiumSignup" ng-click="togglePremiumSignup(false)">
+
+        <div id="premium-signup">
+            <img src="res/close.png" ng-click="togglePremiumSignup(false)" />
+        </div>
+
+    </div>
     
     <div class="filler"></div>
     
-    <div ng-view></div>
+    <div ng-view id="ng-view"></div>
     
     <div class="filler"></div>
     
     <footer class="footer">
-    	<div class="large-center">
-    		<div class="footer-text">
-    			By using AxXxelPorn you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can cancel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 Pornstartnetwork Inc.
-    		</div>
-    	</div>
+            <div class="large-center">
+                    <div class="footer-text">
+                            By using {{person.title}} you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can cancel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 Pornstartnetwork Inc.
+                    </div>
+            </div>
     </footer>
 </body>
 </html>
