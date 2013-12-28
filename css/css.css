@@ -170,7 +170,7 @@ a {
 }
 
 .video-player {
-    width:100%;
+    width:70%;
 }
 
 .video-title {
@@ -192,7 +192,7 @@ a {
 
 .about-center {
     margin:auto;
-    width:600px;
+    width:1000px;
 }
 
 .filler {
@@ -240,6 +240,22 @@ a {
 }
 
 #ng-view {
+}
+
+.link_container {
+	margin:auto;
+	max-width:800px;
+}
+
+.link {
+	font-weight:200;
+	font-size:60px;
+	color:#ddd;
+	transition:background-color 0.3s;
+}
+
+.link:hover {
+	background-color:#333;
 }
 
 #premium-signup-container {

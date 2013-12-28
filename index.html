@@ -141,11 +141,11 @@
     </script>
     
     <script type="text/ng-template" id="partials/links.html">
-        <ul>
-            <li ng-repeat="link in links">
-                <a ng-href="{{link.href}}"><h3>{{link.name}}</h3></a>
-            </li>
-        </ul>
+    
+        <div class="link_container" ng-repeat="link in links">
+            <a class="link" ng-href="{{link.href}}">{{link.name}}</a>
+        </div>
+        
     </script>
     
 </head>
