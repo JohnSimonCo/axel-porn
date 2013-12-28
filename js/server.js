@@ -146,8 +146,8 @@ var server = function() {
 			},
 			{
 				headline: 'New premium Video!',
-				summary: 'We have added a new, mindblowingly sexy video you just can not believe is real!',
-				content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
+				summary: 'CAUTION SUPER SEXY!',
+				content: 'We have added a new, mindblowingly sexy video you just can not believe is real! By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 				image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'
 			},
 			{
