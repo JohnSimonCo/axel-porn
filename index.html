@@ -64,7 +64,7 @@
     </script>
 
     <script type="text/ng-template" id="partials/video.html">
-        <div ng-show="found && premium()">
+        <div ng-show="found && (premium() || !video.premium)">
 
             <div ng-show="found" class="standard-center">
             
@@ -81,14 +81,14 @@
         
         </div>
 
-        <div ng-hide="found && premium()">
+        <div ng-show="found && (video.premium && !premium())">
 
             <h3>You need premium bro</h3>
             
         </div>
 
 
-        <div ng-hide="{{found}}">
+        <div ng-hide="found">
             
             <div class="404 standard-center">404 Page not found, this porn video is not yet created... :(</div>
             
@@ -160,15 +160,23 @@
                 <a href="#/categories" class="header-item">Categories</a>
                 <a href="#/links" class="header-item">Links</a>
                 <a href="#/about" class="header-item">About</a>
-                <a ng-click="goPremium()" class="header-item" id="premium-button">Go Premium</a>
+                <a ng-click="togglePremiumSignup(true)" class="header-item" id="premium-button">Go Premium</a>
                 
             </nav>
         </header>
     </div>
+
+    <div id="premium-signup-container" ng-show="premiumSignup">
+
+        <div id="premium-signup">
+            <img src="res/close.png" ng-click="togglePremiumSignup(false)" />
+        </div>
+
+    </div>
     
     <div class="filler"></div>
     
-    <div ng-view></div>
+    <div ng-view id="ng-view"></div>
     
     <div class="filler"></div>
     

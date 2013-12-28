@@ -236,6 +236,24 @@ a {
     color: #ffd700;
 }
 
+#ng-view {
+}
+
+#premium-signup-container {
+    background-color: #555;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+#premium-signup {
+    background-color: #aaa;
+    width: 600px;
+    margin: auto;
+    z-index: 2;
+}
+
 ::-webkit-scrollbar
 {
   width: 12px;  /* for vertical scrollbars */

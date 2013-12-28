@@ -35,9 +35,9 @@ var people = [
 	}
 ];
 var person = people[2];
-var Section = function(name, populate) {
+var Section = function(name, assign) {
 	this.name = name;
-	this.populate = populate;
+	this.assign = assign;
 	this.videos = [];
 }
 var server = function() {
@@ -69,7 +69,7 @@ var server = function() {
 						views: 675,
 						watched: false,
 						hot: true,
-						premium: false
+						premium: true
 					}
 				]
 			},
@@ -97,8 +97,8 @@ var server = function() {
 						src: 'videos/hotgrandma.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
-						watched: true,
-						hot: false,
+						watched: false,
+						hot: true,
 						premium: false
 					}
 				]
@@ -152,20 +152,14 @@ var server = function() {
 			}
 		],
 		sections: {
+			premium: new Section('Premium', function(video) {
+				return video.premium;
+			}),
 			hot: new Section('Hot', function(video) {
-				if (video.hot) {
-					this.videos.push(video);
-				};
+				return video.hot;
 			}),
 			watched: new Section('Most watched', function(video) {
-				if (video.watched) {
-					this.videos.push(video);
-				};
-			}),
-			premium: new Section('Premium', function(video) {
-				if (video.premium) {
-					this.videos.push(video);
-				};
+				return video.watched;
 			})
 		},
 		links: [
@@ -186,10 +180,13 @@ var server = function() {
 			var video = data.categories[category].videos[id];
 			video.href = '#/video/' + category + '/' + id;
 
-			for(var section in data.sections) {
+			for(var sec in data.sections) {
+				var section = data.sections[sec];
 				if(!video.assigned) {
-					data.sections[section].populate(video);
-					video.assigned = true;
+					if(section.assign(video)) {
+						section.videos.push(video);
+						video.assigned = true;
+					}
 				}
 			}
 		}

@@ -2,11 +2,17 @@ var pornControllers = angular.module('pornControllers', []);
  
 pornControllers.controller('DefaultController', ['$scope',
 	function ($scope) {
+		$scope.person = person;
+
 		$scope.premium = function() { return server.premium; };
 		$scope.goPremium = function() {
 			server.premium = true;
 		};
-		$scope.person = person;
+
+		$scope.togglePremiumSignup = function(state) {
+			$scope.premiumSignup = state;
+		};
+
 	}
 ])
 
