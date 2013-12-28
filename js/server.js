@@ -55,6 +55,26 @@ var server = function() {
 						watched: true,
 						hot: true,
 						premium: true
+					},
+					{
+						name: person.name + '\'s första runkvideo',
+						description: person.name + ' pappa visar hur man gör',
+						src: 'videos/skogsmulle.mp4',
+						thumbnail: 'http://cdn01.nyheter24.se/9b24e4c10802021d01/2012/11/09/767899/sp0bbfc4.jpg',
+						views: 18905,
+						watched: true,
+						hot: true,
+						premium: true
+					},
+					{
+						name: person.name + '\'s pappas runkvideo',
+						description: person.name + ' runkar sin mamma i skogen',
+						src: 'videos/skogsmulle.mp4',
+						thumbnail: 'http://www.1clickcd.com/files/NAS4/covers/art-226267-1367482051.jpg',
+						views: 18905,
+						watched: true,
+						hot: false,
+						premium: false
 					}
 				]
 			},
@@ -120,7 +140,7 @@ var server = function() {
 						name: person.name + '\'s tight pussy',
 						description: person.name + ' visiting a friend',
 						src: 'videos/friendsforever.mp4',
-						thumbnail: 'http://www.demotivationalposters.net/lesbian-vegetarians-demotivational-posters-25845.html',
+						thumbnail: 'http://diyvagina.com/wp-content/uploads/2013/02/meat-fleshlight-pussy.jpg',
 						views: 67,
 						watched: true,
 						hot: true,
@@ -165,6 +185,16 @@ var server = function() {
 						watched: true,
 						hot: false,
 						premium: true
+					},
+					{
+						name: person.name + ' with Rosa',
+						description: 'Moaning MU!',
+						src: 'videos/syrran.mp4',
+						thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
+						views: 78,
+						watched: true,
+						hot: true,
+						premium: false
 					}
 				]
 			}
