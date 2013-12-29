@@ -237,6 +237,17 @@ var server = function() {
 						watched: true,
 						hot: true,
 						premium: false
+					},
+					{
+						name: people.john.name + ' fucked a goat',
+						description: 'TAPED IT HIMSELF!',
+						src: 'videos/skogsmulle.mp4',
+						thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
+						views: 78,
+						feed: true,
+						watched: true,
+						hot: true,
+						premium: false
 					}
 				]
 			}
