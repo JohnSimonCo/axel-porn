@@ -245,21 +245,21 @@ var server = function() {
 		defaultCategory: 'amateur',
 		news: [
 			{
-				headline: person.john.name + ' fucked a goat!',
+				headline: people.john.name + ' fucked a goat!',
 				summary: 'TAPED IT HIMSELF!',
 				content: 'It\'s maddafakking mental!',
 				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg',
 				href: ''
 			},
 			{
-				headline: person.axel.name + ' jerked off!',
+				headline: people.axel.name + ' jerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg',
 				href: ''
 			},
 			{
-				headline: person.simon.name + ' acting INSANE!',
+				headline: people.simon.name + ' acting INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can\'t explain it! Why would anyone do somthing like that, we just can\'t understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg',
