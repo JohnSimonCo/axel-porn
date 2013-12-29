@@ -260,7 +260,7 @@ var server = function() {
 				summary: 'TAPED IT HIMSELF!',
 				content: 'It\'s maddafakking mental!',
 				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg',
-				href: ''
+				href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/animal/2'
 			},
 			{
 				headline: people.axel.name + ' jerked off!',
