@@ -77,8 +77,8 @@ var server = function() {
 				name: 'Amateur',
 				videos : [
 					{
-						name: people.axel + ' i skogen',
-						description: people.axel + ' runkar sin mamma i skogen',
+						name: people.axel.name + ' i skogen',
+						description: people.axel.name + ' runkar sin mamma i skogen',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 						views: 18905,
@@ -88,8 +88,8 @@ var server = function() {
 						premium: true,
 					},
 					{
-						name: people.axel + '\'s första runkvideo',
-						description: people.axel + ' pappa visar hur man gör',
+						name: people.axel.name + '\'s första runkvideo',
+						description: people.axel.name + ' pappa visar hur man gör',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://cdn01.nyheter24.se/9b24e4c10802021d01/2012/11/09/767899/sp0bbfc4.jpg',
 						views: 18905,
@@ -99,8 +99,8 @@ var server = function() {
 						premium: true
 					},
 					{
-						name: people.axel + '\'s pappas runkvideo',
-						description: people.axel + ' runkar sin mamma i skogen',
+						name: people.axel.name + '\'s pappas runkvideo',
+						description: people.axel.name + ' runkar sin mamma i skogen',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.1clickcd.com/files/NAS4/covers/art-226267-1367482051.jpg',
 						views: 18905,
@@ -115,8 +115,8 @@ var server = function() {
 				name: 'Sneaky film',
 				videos : [
 					{ 
-						name: people.john + ' genom nyckelålet',
-						desc: people.john + 's mammas födelsedagsknull',
+						name: people.john.name + ' genom nyckelålet',
+						desc: people.john.name + 's mammas födelsedagsknull',
 						src: 'videos/parentsex.mp4',
 						thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 						views: 675,
@@ -131,8 +131,8 @@ var server = function() {
 				name: 'MILF',
 				videos : [
 					{
-						name: people.August + ' i garderoben',
-						description: people.August + 's mamma byter om',
+						name: people.august.name + ' i garderoben',
+						description: people.august.name + 's mamma byter om',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://dailykimchi.com/wp-content/uploads/2011/09/chinese-girls-publicly-changing-clothes-on-shanghai-metro-01.jpg',
 						views: 1,
@@ -147,8 +147,8 @@ var server = function() {
 				name: 'Mature',
 				videos : [
 					{ 
-						name: people.sara + ' på besök',
-						description: people.sara + 's farmor och farfar tagna på bar gärning',
+						name: people.sara.name + ' på besök',
+						description: people.sara.name + 's farmor och farfar tagna på bar gärning',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
 						views: 1,
@@ -163,8 +163,8 @@ var server = function() {
 				name: 'Virgin',
 				videos : [
 					{
-						name: people.August + ' på toa',
-						description: people.August + ' och syrran i badkaret',
+						name: people.August.name + ' på toa',
+						description: people.August.name + ' och syrran i badkaret',
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
@@ -174,8 +174,8 @@ var server = function() {
 						premium: false
 					},
 					{
-						name: people.axel + '\'s tight pussy',
-						description: people.axel + ' visiting a friend',
+						name: people.axel.name + '\'s tight pussy',
+						description: people.axel.name + ' visiting a friend',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://diyvagina.com/wp-content/uploads/2013/02/meat-fleshlight-pussy.jpg',
 						views: 67,
@@ -186,7 +186,7 @@ var server = function() {
 					},
 					{
 						name: 'Morgonrunk',
-						description: people.john + ' på toan',
+						description: people.john.name + ' på toan',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
 						views: 18,
@@ -201,7 +201,7 @@ var server = function() {
 				name: 'Fetish',
 				videos : [
 					{
-						name: people.axel + ' provar bondage',
+						name: people.axel.name + ' provar bondage',
 						description: 'Familjeutflykten',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
@@ -217,7 +217,7 @@ var server = function() {
 				name: 'Animal',
 				videos : [
 					{
-						name: people.axel + ' on farm',
+						name: people.axel.name + ' on farm',
 						description: 'Dogs, tools and horses',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
@@ -228,7 +228,7 @@ var server = function() {
 						premium: true
 					},
 					{
-						name: people.Simon + ' with Rosa',
+						name: people.Simon.name + ' with Rosa',
 						description: 'Moaning MU!',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
