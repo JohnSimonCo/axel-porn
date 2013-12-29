@@ -267,7 +267,7 @@ var server = function() {
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg',
-				href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/amateur/1'
+				href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/amateur/1c'
 			},
 			{
 				headline: people.simon.name + ' acting INSANE!',
