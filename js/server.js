@@ -228,7 +228,7 @@ var server = function() {
 						premium: true
 					},
 					{
-						name: people.Simon.name + ' with Rosa',
+						name: people.simon.name + ' with Rosa',
 						description: 'Moaning MU!',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
@@ -245,21 +245,21 @@ var server = function() {
 		defaultCategory: 'amateur',
 		news: [
 			{
-				headline: person.name + ' fucked a goat!',
+				headline: person.john.name + ' fucked a goat!',
 				summary: 'TAPED IT HIMSELF!',
 				content: 'It\'s maddafakking mental!',
 				image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg',
 				href: ''
 			},
 			{
-				headline: person.name + ' jerked off!',
+				headline: person.axel.name + ' jerked off!',
 				summary: 'Watch that cum!',
 				content: 'This must be the ultimate self-pleasing-method.',
 				image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg',
 				href: ''
 			},
 			{
-				headline: person.name + ' acting INSANE!',
+				headline: person.simon.name + ' acting INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can\'t explain it! Why would anyone do somthing like that, we just can\'t understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg',
