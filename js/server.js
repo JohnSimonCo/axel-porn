@@ -163,8 +163,8 @@ var server = function() {
 				name: 'Virgin',
 				videos : [
 					{
-						name: people.August.name + ' på toa',
-						description: people.August.name + ' och syrran i badkaret',
+						name: people.august.name + ' på toa',
+						description: people.august.name + ' och syrran i badkaret',
 						src: 'videos/syrran.mp4',
 						thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
 						views: 65,
@@ -241,6 +241,7 @@ var server = function() {
 				]
 			}
 		},
+
 		defaultCategory: 'amateur',
 		news: [
 			{
