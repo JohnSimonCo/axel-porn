@@ -328,8 +328,8 @@ var server = function() {
 			{
 				headline: people.john.name + ' returns',
 				summary: 'Making new exlusive video!',
-				content: 'COming back from his celibat life in Spain he is hornier than ever, watch out for his new hot videos.',
-				image: 'http://th04.deviantart.net/fs70/PRE/i/2012/070/a/f/mean_tree_____bad_family___internal_art_1_by_floating_eyeball-d4shflx.jpg',
+				content: 'Coming back from his celibat life in Spain he is hornier than ever, watch out for his new hot videos.',
+				image: 'http://upload.wikimedia.org/wikipedia/commons/3/31/Highland_Cattle_bull.jpg',
 				href: ''
 			}
 		],
