@@ -324,6 +324,13 @@ var server = function() {
 				content: 'After reading a article in Expressen, Sara decides to give eko-sex a try.',
 				image: 'http://th04.deviantart.net/fs70/PRE/i/2012/070/a/f/mean_tree_____bad_family___internal_art_1_by_floating_eyeball-d4shflx.jpg',
 				href: ''
+			},
+			{
+				headline: people.John.name + ' returns',
+				summary: 'Making new exlusive video!',
+				content: 'COming back from his celibat life in Spain he is hornier than ever, watch out for his new hot videos.',
+				image: 'http://th04.deviantart.net/fs70/PRE/i/2012/070/a/f/mean_tree_____bad_family___internal_art_1_by_floating_eyeball-d4shflx.jpg',
+				href: ''
 			}
 		],
 		sections: {
