@@ -54,7 +54,7 @@ var people = {
 	john: {
 		name: 'John',
 		title: 'JoHnyPorn',
-		description: 'John is our hardcore legend, known for his daring videos. ',
+		description: 'John is our hardcore legend, known for his daring videos. See his recent kontroversial ',
 		image: '',
 		links: [
 			{
@@ -201,7 +201,7 @@ var server = function() {
 				name: 'Fetish',
 				videos : [
 					{
-						name: people.axel.name + ' provar bondage',
+						name: people.john.name + ' provar bondage',
 						description: 'Familjeutflykten',
 						src: 'videos/skogsmulle.mp4',
 						thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
@@ -270,7 +270,7 @@ var server = function() {
 				href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/amateur/1c'
 			},
 			{
-				headline: people.simon.name + ' acting INSANE!',
+				headline: people.simon.name + ' is acting INSANE!',
 				summary: 'Click to watch!',
 				content: 'We are not going to tell you why because we simply can\'t explain it! Why would anyone do somthing like that, we just can\'t understand.',
 				image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg',
@@ -316,6 +316,13 @@ var server = function() {
 				summary: 'We want new stars!',
 				content: 'If you like being seen, we have a offer you simply can\'t refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here.',
 				image: 'http://3.bp.blogspot.com/_YvpXQckVIuk/Se7WoQvxv2I/AAAAAAAAAI0/azbZNN41PpA/s200/gold+star+sxc',
+				href: ''
+			},
+			{
+				headline: people.sara.name + ' experiences nature',
+				summary: 'Fucked by a tree!',
+				content: 'After reading a article in Expressen, Sara decides to give eko-sex a try.',
+				image: 'http://th04.deviantart.net/fs70/PRE/i/2012/070/a/f/mean_tree_____bad_family___internal_art_1_by_floating_eyeball-d4shflx.jpg',
 				href: ''
 			}
 		],
