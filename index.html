@@ -10,12 +10,13 @@
     <script src="lib/angular-route.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/cookies.js"></script>
+    <script src="lib/lorum-ipsum.js"></script>
         
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/server.js"></script>
 
-    <title ng-bind="person.title">Porn</title>
+    <title ng-bind="star.title">Porn</title>
 
     <script type="text/ng-template" id="partials/feed.html">
         <div class="feed-container standard-center">
@@ -131,11 +132,7 @@
     </script>
 
     <script type="text/ng-template" id="partials/about.html">
-        <div class="about about-center">
-    
-            {{person.title}} is a project designed to help people all around the world access our wide collection of {{person.name}} porn. We consider it a basic human  right to have access to pornographic content with {{person.name}} in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.
-    
-        </div>
+        <div class="about about-center">{{about}}</div>
     </script>
     
     <script type="text/ng-template" id="partials/links.html">
@@ -151,7 +148,7 @@
 
     <div class="header-container">
         <header class="header large-center">
-            <a class="header-title" href="#">{{person.title}}</a>
+            <a class="header-title" href="#">{{star.title}}</a>
             
             <nav class="header-nav">
                 
@@ -181,9 +178,7 @@
     
     <footer class="footer">
             <div class="large-center">
-                    <div class="footer-text">
-                            By using {{person.title}} you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can\'t\'t can\'t\'tcel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 {{people.company}} Inc.
-                    </div>
+                    <div class="footer-text">{{footer}}</div>
             </div>
     </footer>
 </body>
