@@ -4,7 +4,7 @@ var Section = function(name, assign) {
 	this.videos = [];
 }
 
-var censore = false;
+var censore = true;
 
 var server = function(censored) {
 	var data = {};
@@ -64,7 +64,7 @@ var server = function(censored) {
 		john: {
 			name: 'John',
 			title: 'JoHnyPorn',
-			description: 'John is our hardcore legend, known for his daring videos. See his recent controversial',
+			description: 'John is our hardcore legend, known for his daring videos. See his recent controversial videos.',
 			image: '',
 			links: [
 				{
