@@ -199,6 +199,10 @@ a {
     height:10px;
 }
 
+.news-scroll-container {
+    position: fixed;
+}
+
 .news-title {
     padding-bottom: 13px;
     text-transform:uppercase;
