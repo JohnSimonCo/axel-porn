@@ -208,7 +208,55 @@ var server = function(censored) {
 				data.tags.bigTits,
 				data.tags.hardcore,
 				data.tags.bondage,
-				data.tags.rough
+				data.tags.rough,
+				data.tags.milf,
+				data.tags.Mature
+				]
+		},
+		{
+			name: data.actors.august.name + ' i garderoben',
+			description: data.actors.august.name + 's mamma byter om',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://dailykimchi.com/wp-content/uploads/2011/09/chinese-girls-publicly-changing-clothes-on-shanghai-metro-01.jpg',
+			views: 1,
+			tags: [
+				data.tags.sneakyFilm,
+				data.tags.premium,
+				data.tags.bigTits,
+				data.tags.milf,
+				data.tags.Mature
+				]
+		},
+		{ 
+			name: data.actors.sara.name + ' på besök',
+			description: data.actors.sara.name + 's farmor och farfar tagna på bar gärning',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
+			views: 1,
+			tags: [
+				data.tags.sneakyFilm,
+				data.tags.premium,
+				data.tags.smallTits,
+				data.tags.bigDick,
+				data.tags.mature,
+				data.tags.rough,
+				data.tags.hardcore,
+				data.tags.bondage
+				]
+		},
+		{
+			name: data.actors.august.name + ' på toa',
+			description: data.actors.august.name + ' och syrran i badkaret',
+			src: 'videos/syrran.mp4',
+			thumbnail: 'http://straightladsexposed.com/blog/images/naked-men-caught-in-the-toilet3.jpg',
+			views: 65,
+			tags: [
+				data.tags.sneakyFilm,
+				data.tags.virgin,
+				data.tags.premium,
+				data.tags.smallTits,
+				data.tags.blonde,
+				data.tags.shemale
 				]
 		},
 	];
