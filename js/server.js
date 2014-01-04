@@ -267,7 +267,6 @@ var server = function(censored) {
 			views: 78,
 			tags: [
 				data.tags.virgin,
-				data.tags.premium,
 				data.tags.soloMale
 				]
 		},
@@ -306,7 +305,6 @@ var server = function(censored) {
 			views: 71,
 			tags: [
 				data.tags.soloMale,
-				data.tags.premium,
 				data.tags.hot,
 				data.tags.bigDick,
 				data.tags.animal,
@@ -334,6 +332,59 @@ var server = function(censored) {
 			description: 'Familjeutflykten',
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
+			views: 32,
+			tags: [
+				data.tags.bigDick,
+				data.tags.rough,
+				data.tags.bondage,
+				data.tags.hardcore,
+				data.tags.animal
+				]
+		},
+		{
+			name: data.actors.john.name + ' is back',
+			description: 'Spain made him horny',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://ourfunfabhols.files.wordpress.com/2008/11/spain-flag.jpg',
+			views: 45,
+			tags: [
+				data.tags.soloMale,
+				data.tags.rough,
+				data.tags.hardcore,
+				data.tags.bigDick
+				]
+		},
+		{
+			name: data.actors.simon.name + ' in public',
+			description: 'He isn\'t ashamed',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.in-public.com/store/image/file/3143/Maciej_Dakowicz_Cardiff_After_Dark_01.jpg?1362841496',
+			views: 71,
+			tags: [
+				data.tags.soloMale,
+				data.tags.hot,
+				data.tags.smallTits,
+				data.tags.bondage
+				]
+		},
+		{
+			name: data.actors.august.name + ' picks up MILF',
+			description: 'Abandoing child for sex',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.bbc.co.uk/stoke/content/images/2006/07/20/carrying_420x270.jpg',
+			views: 34,
+			tags: [
+				data.tags.premium,
+				data.tags.rough,
+				data.tags.hardcore,
+				data.tags.milf,
+				]
+		},
+		{
+			name: data.actors.sara.name + ' at playground',
+			description: 'Hot deperate fathers',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://nsrlive.co.uk/wp-content/uploads/2011/12/only_men_aloud.jpeg',
 			views: 32,
 			tags: [
 				data.tags.premium,
