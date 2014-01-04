@@ -59,7 +59,7 @@ var people = {
 		links: [
 			{
 				name: 'Johns facebook',
-				href: 'http://www.facebook.com/john.rapp.3'
+				href: 'http://www.facebook.com/johnrappfarnes'
 			}
 		]
 	}
