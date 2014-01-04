@@ -294,7 +294,7 @@ a {
 }
 
 .tags-left-item {
-	width: 95%;
+    width: 60%;
 }
 
 .tags-left-item a {
@@ -303,7 +303,7 @@ a {
     font-weight: 200;
     font-size: 23px;
     display: block;
-    width: 100%;
+    width: 90%;
 	color:white;
 	transition:background-color 0.2s;
 }
@@ -344,7 +344,8 @@ a {
 }
 
 .tags-selected {
-    background-color:#c0392b;
+    width: 50%;
+    border-left: 20px solid #c0392b;
 }
 
 @media screen and (min-width:1919px) {
