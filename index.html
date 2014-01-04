@@ -111,44 +111,43 @@
     </script>
 
     <script type="text/ng-template" id="partials/category.html">
-    
-    	<div class="tags-left-container">
-    		<div class="tags-left-item" ng-repeat="tag in tags">
-    			<a ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
-    		</div>
-    	</div>
-    	
-    	<div class="tags-right-container">
-    	
-    		<div class="tags-right-top">
+
+    </script>
+
+    <script type="text/ng-template" id="partials/videos.html">
+
+        <div class="tags-left-container">
+            <div class="tags-left-item" ng-repeat="tag in tags">
+                <a ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
+            </div>
+        </div>
+        
+        <div class="tags-right-container">
+        
+            <div class="tags-right-top">
 
                 <div class="tags-right-top-title">
                 {{currentCategory.name}}
                 </div>
-    			
-    		</div>
-    		
-    		<div class="feed-video" ng-repeat="video in currentCategory.videos">
-    				
-    			<a ng-href="{{video.href}}">
-                   	<img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
+                
+            </div>
+            
+            <div class="feed-video" ng-repeat="video in currentCategory.videos">
+                    
+                <a ng-href="{{video.href}}">
+                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
                 </a>
                         
-	            <a ng-href="{{video.href}}">
-	           		<div class="feed-video-title">{{video.name}}</div>
-	            </a>
+                <a ng-href="{{video.href}}">
+                    <div class="feed-video-title">{{video.name}}</div>
+                </a>
                 
-             	<div class="feed-video-views">VIEWS: {{video.views}}</div>
+                <div class="feed-video-views">VIEWS: {{video.views}}</div>
 
-    		</div>
-    		
-    	</div>
+            </div>
+            
+        </div>
 
-              
-        
-    </script>
-
-    <script type="text/ng-template" id="partials/videos.html">
     </script>
 
     <script type="text/ng-template" id="partials/about.html">
