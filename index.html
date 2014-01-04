@@ -32,14 +32,14 @@
 		    
 		            <div class="feed-section-title" ng-class="{premium: section.name == 'Premium'}">{{section.name}}</div>
 		            
-		            <div id="feed-video" ng-repeat="video in section.videos track by $index">
+		            <div class="feed-video" ng-repeat="video in section.videos track by $index">
 		
 		                <a ng-href="{{video.href}}">
 		                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
 		                </a>
 		                
 		                <a ng-href="{{video.href}}">
-		                    <div id="feed-video-title">{{video.name}}</div>
+		                    <div class="feed-video-title">{{video.name}}</div>
 		                </a>
 		                
 		                <div class="feed-video-views">VIEWS: {{video.views}}</div>
@@ -117,7 +117,12 @@
 
         <div class="tags-left-container">
 
-            <input type="text" ng-model="tagQuery"/>
+            <input type="text" ng-model="tagQuery" class="tags-search" />
+            <hr class="tags-search-divider"></hr>
+            
+            <div class="tags-search-clear" ng-click="clear()" ng-show="showClear">
+            Clear search
+            </div>
 
             <div class="tags-left-item" ng-repeat="tag in tags" ng-show="showTag(tag)">
                 <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
@@ -134,14 +139,14 @@
                 
             </div>
             
-            <div id="feed-video" ng-repeat="video in videos" ng-show="showVideo(video.tags)">
+            <div class="feed-video" ng-repeat="video in videos" ng-show="showVideo(video.tags)">
                     
                 <a ng-href="{{video.href}}">
                     <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
                 </a>
-                        
+                
                 <a ng-href="{{video.href}}">
-                    <div id="feed-video-title">{{video.name}}</div>
+                    <div class="feed-video-title">{{video.name}}</div>
                 </a>
                 
                 <div class="feed-video-views">VIEWS: {{video.views}}</div>
