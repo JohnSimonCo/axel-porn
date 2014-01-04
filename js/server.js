@@ -128,10 +128,10 @@ var server = function(censored) {
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
 			views: 18905,
-			tags [
-				data.tags.premium;
-				data.tags.watchedNow;
-				data.tags.hot;
+			tags: [
+				data.tags.premium,
+				data.tags.watchedNow,
+				data.tags.hot
 			]
 		}
 	];
