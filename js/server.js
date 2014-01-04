@@ -4,10 +4,14 @@ var Section = function(name, assign) {
 	this.videos = [];
 }
 
-var censore = true;
+var censore = false;
 
 var server = function(censored) {
 	var data = {};
+	data.tags = {
+		milf: 'MILF'
+
+	};
 	data.actors = {
 		axel: {
 			name: 'Axel',
