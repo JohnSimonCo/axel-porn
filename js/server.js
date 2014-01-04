@@ -26,8 +26,6 @@ var server = function(censored) {
 				}
 			]
 		},
-	
-		},
 		simon: {
 			name: 'Simon',
 			title: 'SiMmePorn',
@@ -64,7 +62,7 @@ var server = function(censored) {
 				}
 			],
 		},
-		august: {
+		filip: {
 			name: 'Filip',
 			title: 'fiLLiePorn',
 			description: 'Filip is our sites maniac. He is the one to take on the Brasillian dwarfs and the challanges you give him. He has no limits.',
@@ -84,7 +82,7 @@ var server = function(censored) {
 			links: [
 				{
 					name: 'Johns facebook',
-					href: 'http://www.facebook.com/john.rapp.3'
+					href: 'http://www.facebook.com/johnrappfarnes'
 				}
 			]
 		}
@@ -112,6 +110,7 @@ var server = function(censored) {
 		simon: 'Simon',
 		august: 'August',
 		axel: 'Axel',
+		filip: 'Filip',
 		anal: 'Anal',
 		gay: 'Gay',
 		blonde: 'Blonde',
@@ -347,6 +346,47 @@ var server = function(censored) {
 		},
 		{
 			name: data.actors.august.name + ' picks up MILF',
+			description: 'Abandoing child for sex',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.bbc.co.uk/stoke/content/images/2006/07/20/carrying_420x270.jpg',
+			views: 34,
+			tags: [
+				data.tags.premium,
+				data.tags.rough,
+				data.tags.hardcore,
+				data.tags.milf,
+				]
+		},
+		{
+			name: data.actors.sara.name + ' at playground',
+			description: 'Hot deperate fathers',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://nsrlive.co.uk/wp-content/uploads/2011/12/only_men_aloud.jpeg',
+			views: 32,
+			tags: [
+				data.tags.premium,
+				data.tags.bigDick,
+				data.tags.rough,
+				data.tags.bondage,
+				data.tags.hardcore,
+				data.tags.animal
+				]
+		},
+		{
+			name: data.actors.filip.name + ' gone mad',
+			description: 'Exposing frog',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.joe-ks.com/archives_jul2011/FrogFood.jpg',
+			views: 71,
+			tags: [
+				data.tags.soloMale,
+				data.tags.hot,
+				data.tags.smallTits,
+				data.tags.bondage
+				]
+		},
+		{
+			name: data.actors.sara.name + ' picks up MILF',
 			description: 'Abandoing child for sex',
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'http://www.bbc.co.uk/stoke/content/images/2006/07/20/carrying_420x270.jpg',
