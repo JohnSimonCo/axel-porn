@@ -1,3 +1,11 @@
+$( ".feed-video-title" ).hover(
+  function() {
+  	alert('hover');
+  }, function() {
+  	alert('loljk');
+  }
+);
+
 var pornControllers = angular.module('pornControllers', []);
  
 pornControllers.controller('DefaultController', ['$scope',
@@ -68,6 +76,9 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			} else {
 				return true;
 			}
+		}
+		$scope.showClear = function() {
+			return $scope.tagQuery && $scope.tagQuery.length > 0; 
 		}
 		$scope.toggleTag = function(tag, state) {
 			state = !state;
