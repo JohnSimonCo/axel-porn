@@ -40,22 +40,28 @@ pornControllers.controller('ArticleController', ['$scope', '$routeParams',
 
 pornControllers.controller('VideosController', ['$scope', '$location',
 	function($scope, $location) {
-		var parseTags = function() {
-
-		}
-		var currentTags = function() {
-			$location.search();
-			return tags;
-		}();
 		$scope.videos = server.videos;
+		$scope.tags = server.tags;
+		var selectedTags = $location.search().tags;
+		var updateTags = function() {
+			$location.search('tags', selectedTags);
+		}
 		$scope.selected = function(tag) {
-			return currentTags.indexOf(tag) > -1;
+			return contains(selectedTags, tag);
 		}
 		$scope.show = function(tags) {
-
+			for(var tag in tags) {
+				if(contains(tags, tags[tag])) return true;
+			}
+			return false;
 		}
 		$scope.toggleTag = function(tag, state) {
-
+			if(state) {
+				selectedTags.push(tag);
+			} else if(contains(selectedTags, tag)) {
+				selectedTags.splice(selectedTags.indexOf(tag), 1);
+			}
+			updateTags();
 		};
 	}
 ]);

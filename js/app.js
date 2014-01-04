@@ -18,10 +18,10 @@ pornApp.config(['$routeProvider',
         templateUrl: 'partials/article.html',
         controller: 'ArticleController'
       }).
-      /*when('/videos', {
+      when('/videos/:tags', {
         templateUrl: 'partials/videos.html',
         controller: 'VideosController'
-      }).*/
+      }).
       when('/videos/', {
         templateUrl: 'partials/videos.html',
         controller: 'VideosController'
