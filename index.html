@@ -122,7 +122,11 @@
     	<div class="tags-right-container">
     	
     		<div class="tags-right-top">
-    			{{currentCategory.name}}
+
+                <div class="tags-right-top-title">
+                {{currentCategory.name}}
+                </div>
+    			
     		</div>
     		
     		<div class="feed-video" ng-repeat="video in currentCategory.videos">
@@ -143,6 +147,9 @@
 
               
         
+    </script>
+
+    <script type="text/ng-template" id="partials/videos.html">
     </script>
 
     <script type="text/ng-template" id="partials/about.html">
@@ -166,6 +173,7 @@
             
             <nav class="header-nav">
                 
+                <a href="#/videos" class="header-item">Videos</a>
                 <a href="#/category/whatever" class="header-item">Categories</a>
                 <a href="#/links" class="header-item">Links</a>
                 <a href="#/about" class="header-item">About</a>
