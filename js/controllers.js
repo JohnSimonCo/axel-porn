@@ -43,7 +43,13 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 		$scope.videos = server.videos;
 		$scope.tags = server.tags;
 		var selectedTags = $location.search().tags;
+		if(typeof selectedTags !== 'object') {
+			var old = selectedTags;
+			selectedTags = [];
+			if(old) selectedTags.push(old);
+		} 
 		var updateTags = function() {
+			console.log(selectedTags);
 			$location.search('tags', selectedTags);
 		}
 		$scope.selected = function(tag) {
@@ -56,6 +62,7 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			return false;
 		}
 		$scope.toggleTag = function(tag, state) {
+			state = !state;
 			if(state) {
 				selectedTags.push(tag);
 			} else if(contains(selectedTags, tag)) {
