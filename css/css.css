@@ -352,8 +352,7 @@ a {
 }
 
 .tags-selected {
-    width: 50%;
-    border-left: 20px solid #c0392b;
+    
 }
 
 @media screen and (min-width:1919px) {
