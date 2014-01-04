@@ -120,7 +120,7 @@ var server = function(censored) {
 	data.tags = {
 		premium: 'Premium',
 		hot: 'Hot',
-		watchedNow: 'Watched Now'
+		watchedNow: 'Watched Now',
 		milf: 'MILF',
 		amateur: 'Amateur',
 		bondage: 'Bondage',
@@ -141,7 +141,7 @@ var server = function(censored) {
 		hardcore: 'Hardcore',
 		rough: 'Rough',
 		bondage: 'Bondage',
-		soloMale: 'Solo Male'
+		soloMale: 'Solo Male',
 		BBW: 'BBW',
 		smallTits: 'Small Tits',
 		bigTits: 'Big Tits',
@@ -153,60 +153,64 @@ var server = function(censored) {
 	};
 
 	data.videos = [
-			{
-				name: data.actors.axel.name + ' i skogen',
-				description: data.actors.axel.name + ' runkar sin mamma i skogen',
-				src: 'videos/skogsmulle.mp4',
-				thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
-				views: 18905,
-				tags: [
-					data.tags.amateur,
-					data.tags.premium,
-					data.tags.watchedNow,
-					data.tags.hot
-			},
-			{
-				name: data.actors.axel.name + '\'s första runkvideo',
-				description: data.actors.axel.name + ' pappa visar hur man gör',
-				src: 'videos/skogsmulle.mp4',
-				thumbnail: 'http://cdn01.nyheter24.se/9b24e4c10802021d01/2012/11/09/767899/sp0bbfc4.jpg',
-				views: 905,
-				tags: [
-					data.tags.amateur,
-					data.tags.premium,
-					data.tags.watchedNow,
-					data.tags.hot,
-					data.tags.soloMeal
-			},
-			{
-				name: data.actors.axel.name + '\'s pappas runkvideo',
-				description: data.actors.axel.name + ' runkar sin mamma i skogen',
-				src: 'videos/skogsmulle.mp4',
-				thumbnail: 'http://www.1clickcd.com/files/NAS4/covers/art-226267-1367482051.jpg',
-				views: 18905,
-				tags: [
-					data.tags.amateur,
-					data.tags.premium,
-					data.tags.watchedNow,
-					data.tags.bigDick,
-					data.tags.soloMale,
-					data.tags.hardcore
-			},
-				name: data.actors.john.name + ' genom nyckelålet',
-				desc: data.actors.john.name + 's mammas födelsedagsknull',
-				src: 'videos/parentsex.mp4',
-				thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
-				views: 675,
-				tags: [
-					data.tags.sneakyFilm,
-					data.tags.premium,
-					data.tags.hot,
-					data.tags.bigTits,
-					data.tags.hardcore,
-					data.tags.bondage,
-					data.tags.rough
-			},
-		]
+		{
+			name: data.actors.axel.name + ' i skogen',
+			description: data.actors.axel.name + ' runkar sin mamma i skogen',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
+			views: 18905,
+			tags: [
+				data.tags.amateur,
+				data.tags.premium,
+				data.tags.watchedNow,
+				data.tags.hot
+				]
+		},
+		{
+			name: data.actors.axel.name + '\'s första runkvideo',
+			description: data.actors.axel.name + ' pappa visar hur man gör',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://cdn01.nyheter24.se/9b24e4c10802021d01/2012/11/09/767899/sp0bbfc4.jpg',
+			views: 905,
+			tags: [
+				data.tags.amateur,
+				data.tags.premium,
+				data.tags.watchedNow,
+				data.tags.hot,
+				data.tags.soloMeal
+				]
+		},
+		{
+			name: data.actors.axel.name + '\'s pappas runkvideo',
+			description: data.actors.axel.name + ' runkar sin mamma i skogen',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.1clickcd.com/files/NAS4/covers/art-226267-1367482051.jpg',
+			views: 18905,
+			tags: [
+				data.tags.amateur,
+				data.tags.premium,
+				data.tags.watchedNow,
+				data.tags.bigDick,
+				data.tags.soloMale,
+				data.tags.hardcore
+				]
+		},
+		{
+			name: data.actors.john.name + ' genom nyckelålet',
+			desc: data.actors.john.name + 's mammas födelsedagsknull',
+			src: 'videos/parentsex.mp4',
+			thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
+			views: 675,
+			tags: [
+				data.tags.sneakyFilm,
+				data.tags.premium,
+				data.tags.hot,
+				data.tags.bigTits,
+				data.tags.hardcore,
+				data.tags.bondage,
+				data.tags.rough
+				]
+		},
 	];
 
 	data.categories = {
