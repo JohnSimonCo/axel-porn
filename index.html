@@ -116,7 +116,7 @@
 
         <div class="tags-left-container">
 
-            <input type="text" ng-model="tagQuery"/>
+            <input type="text" ng-model="tagQuery" ng-change="updateTagQuery()"/>
 
             <div class="tags-left-item" ng-repeat="tag in tags" ng-show="showTag(tag)">
                 <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
