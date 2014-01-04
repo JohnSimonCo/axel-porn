@@ -72,7 +72,7 @@
             
                 <video class="video-player" controls>
                     <source ng-src="{{video.src}}" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Your browser does not support the video tag fucktard.
                 </video>
                 
                 <div class="video-title">{{video.name}}</div>
@@ -109,12 +109,26 @@
     </script>
 
     <script type="text/ng-template" id="partials/category.html">
+    
+    
+    	
+    	<div class="category-left-container">
+    		<div class="category-left-item">
+    			<a href="{{category.href}}">{{category.name}}</a>
+    		</div>
+    	
+    	</div>
+
+		/*
 
         <ul>
             <li class="standard-list" ng-repeat="category in categories">
                 <a href="{{category.href}}"><h3>{{category.name}}</h3></a>
             </li>
         </ul>
+        
+        
+        
         <ul>
             <h3>{{currentCategory.name}}</h3>
             <li class="standard-list" ng-repeat="video in currentCategory.videos">
@@ -129,6 +143,9 @@
                 <div class="feed-video-views">VIEWS: {{video.views}}</div>
             </li>
         </ul>
+        
+        */
+        
     </script>
 
     <script type="text/ng-template" id="partials/about.html">
