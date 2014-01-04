@@ -352,7 +352,7 @@ a {
 }
 
 .tags-selected {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 @media screen and (min-width:1919px) {
