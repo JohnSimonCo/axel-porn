@@ -44,7 +44,6 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 		$scope.tags = server.tags;
 
 		var selectedTags = $location.search().tags;
-		$scope.tagQuery =  $location.search().tagQuery;
 		if(typeof selectedTags !== 'object') {
 			var old = selectedTags;
 			selectedTags = [];
@@ -52,8 +51,7 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 		} 
 
 		var updateUrl = function() {
-			$location.search('tags', selectedTags).replace();
-			$location.search('tagQuery', $scope.tagQuery).replace();
+			$location.search('tags', selectedTags);
 		}
 		$scope.selected = function(tag) {
 			return contains(selectedTags, tag);

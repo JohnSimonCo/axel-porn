@@ -20,7 +20,8 @@ pornApp.config(['$routeProvider',
       }).
       when('/videos/', {
         templateUrl: 'partials/videos.html',
-        controller: 'VideosController'
+        controller: 'VideosController',
+        reloadOnSearch: false
       }).
       when('/category/:categoryId', {
         templateUrl: 'partials/category.html',
