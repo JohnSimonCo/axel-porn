@@ -42,19 +42,24 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 	function($scope, $location) {
 		$scope.videos = server.videos;
 		$scope.tags = server.tags;
+
 		var selectedTags = $location.search().tags;
 		if(typeof selectedTags !== 'object') {
 			var old = selectedTags;
 			selectedTags = [];
 			if(old) selectedTags.push(old);
 		} 
+
 		var updateUrl = function() {
 			$location.search('tags', selectedTags);
 		}
 		$scope.selected = function(tag) {
 			return contains(selectedTags, tag);
 		}
-		$scope.show = function(tags) {
+		$scope.showTag = function(tag) {
+			
+		}
+		$scope.showVideo = function(tags) {
 			if(selectedTags.length > 0) {
 				for(var tag in tags) {
 					if(contains(selectedTags, tags[tag])) return true;
