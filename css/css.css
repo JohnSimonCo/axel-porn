@@ -343,6 +343,10 @@ a {
 	width:300px;
 }
 
+.tags-selected {
+    background-color:#c0392b;
+}
+
 @media screen and (min-width:1919px) {
 	.standard-center {
     	max-width:1460px;
