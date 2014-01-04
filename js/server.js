@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 var people = {
 	axel: {
 		name: 'Axel',
@@ -68,6 +69,8 @@ var people = {
 var person = people.john;
 =======
 >>>>>>> c0dabee310c5ed3f82e840962c24d41351706fae
+=======
+>>>>>>> c0dabee310c5ed3f82e840962c24d41351706fae
 var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
@@ -94,6 +97,7 @@ var server = function(censored) {
 					href: 'http://www.youtube.com/user/swifTyBobCaT'
 				}
 			]
+<<<<<<< HEAD
 		},
 		simon: {
 			name: 'Simon',
@@ -131,6 +135,45 @@ var server = function(censored) {
 				}
 			],
 		},
+=======
+		},
+		simon: {
+			name: 'Simon',
+			title: 'SiMmePorn',
+			description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.',
+			image: '',
+			links: [
+				{
+					name: 'Simons facebook',
+					href: 'http://www.facebook.com/simon.halvdansson'
+				}
+			]
+		},
+		sara: {
+			name: 'Sara',
+			title: 'SaRaPorn',
+			description: 'As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.',
+			image: '',
+			links: [
+				{
+					name: 'Saras facebook',
+					href: 'http://www.facebook.com/sara.wiberg.18'
+				}
+			]
+		},
+		august: {
+			name: 'August',
+			title: 'aGGePorn',
+			description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.',
+			image: '',
+			links: [
+				{
+					name: 'Agges facebook',
+					href: 'http://www.facebook.com/agge21?ref=ts&fref=ts'
+				}
+			],
+		},
+>>>>>>> c0dabee310c5ed3f82e840962c24d41351706fae
 		john: {
 			name: 'John',
 			title: 'JoHnyPorn',
@@ -452,9 +495,15 @@ var server = function(censored) {
 	data.premium = false;
 
 	data.footer = 'By using ' + data.star.title + ' you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can cancel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 ' + data.company + '.';
+<<<<<<< HEAD
 	
 	data.about = data.star.title + ' is a project designed to help people all around the world access our wide collection of ' + data.star.name + ' porn. We consider it a basic human  right to have access to pornographic content with ' + data.star.name + ' in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.';
 	
+=======
+	
+	data.about = data.star.title + ' is a project designed to help people all around the world access our wide collection of ' + data.star.name + ' porn. We consider it a basic human  right to have access to pornographic content with ' + data.star.name + ' in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.';
+	
+>>>>>>> c0dabee310c5ed3f82e840962c24d41351706fae
 	var censore = function(obj) {
 		for(var key in obj) {
 			if(key !== 'href') {
@@ -472,4 +521,8 @@ var server = function(censored) {
 		censore(data);
 
 	return data;
+<<<<<<< HEAD
 }(censore);
+=======
+}(censore);
+>>>>>>> c0dabee310c5ed3f82e840962c24d41351706fae
