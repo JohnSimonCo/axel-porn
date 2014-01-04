@@ -42,19 +42,31 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 	function($scope, $location) {
 		$scope.videos = server.videos;
 		$scope.tags = server.tags;
+
 		var selectedTags = $location.search().tags;
+		$scope.tagQuery =  $location.search().tagQuery;
 		if(typeof selectedTags !== 'object') {
 			var old = selectedTags;
 			selectedTags = [];
 			if(old) selectedTags.push(old);
 		} 
+
 		var updateUrl = function() {
 			$location.search('tags', selectedTags);
+			$location.search('tagQuery', $scope.tagQuery);
 		}
 		$scope.selected = function(tag) {
 			return contains(selectedTags, tag);
 		}
-		$scope.show = function(tags) {
+		$scope.showTag = function(tag) {
+			var show = (!$scope.tagQuery || $scope.tagQuery.length <= 0) || contains(tag.toLowerCase(), $scope.tagQuery.toLowerCase());
+			if(show)
+				show = show;
+			if(!show)
+				show = show;
+			return show;
+		}
+		$scope.showVideo = function(tags) {
 			if(selectedTags.length > 0) {
 				for(var tag in tags) {
 					if(contains(selectedTags, tags[tag])) return true;

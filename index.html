@@ -117,7 +117,10 @@
     <script type="text/ng-template" id="partials/videos.html">
 
         <div class="tags-left-container">
-            <div class="tags-left-item" ng-repeat="tag in tags">
+
+            <input type="text" ng-model="tagQuery"/>
+
+            <div class="tags-left-item" ng-repeat="tag in tags" ng-show="showTag(tag)">
                 <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
             </div>
         </div>
@@ -132,7 +135,7 @@
                 
             </div>
             
-            <div class="feed-video" ng-repeat="video in videos" ng-show="show(video.tags)">
+            <div class="feed-video" ng-repeat="video in videos" ng-show="showVideo(video.tags)">
                     
                 <a ng-href="{{video.href}}">
                     <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
