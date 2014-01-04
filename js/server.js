@@ -218,7 +218,7 @@ var server = function(censored) {
 			description: data.actors.august.name + 's mamma byter om',
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'http://dailykimchi.com/wp-content/uploads/2011/09/chinese-girls-publicly-changing-clothes-on-shanghai-metro-01.jpg',
-			views: 1,
+			views: 6,
 			tags: [
 				data.tags.sneakyFilm,
 				data.tags.premium,
@@ -232,7 +232,7 @@ var server = function(censored) {
 			description: data.actors.sara.name + 's farmor och farfar tagna på bar gärning',
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoUAub4omdnfVbvHTw0nsPnlXB4hIXov27HgGFN_vUThBIu6Ps7w',
-			views: 1,
+			views: 67,
 			tags: [
 				data.tags.sneakyFilm,
 				data.tags.premium,
@@ -259,6 +259,91 @@ var server = function(censored) {
 				data.tags.shemale
 				]
 		},
+		{
+			name: data.actors.axel.name + '\'s tight pussy',
+			description: data.actors.axel.name + ' visiting a friend',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://diyvagina.com/wp-content/uploads/2013/02/meat-fleshlight-pussy.jpg',
+			views: 78,
+			tags: [
+				data.tags.virgin,
+				data.tags.premium,
+				data.tags.soloMale
+				]
+		},
+		{
+			name: 'Morgonrunk',
+			description: data.actors.john.name + ' på toan',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://blogg.vk.se/Mexan/wp-content/uploads/sites/427/2013/07/IMG_60271.jpg',
+			views: 13,
+			tags: [
+				data.tags.soloMale,
+				data.tags.premium,
+				data.tags.hot,
+				data.tags.bigDick,
+				data.tags.rough
+				]
+		},
+		{
+			name: data.actors.axel.name + ' on farm',
+			description: 'Dogs, tools and horses',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.myspaceantics.com//images/myspace-graphics/funny-pictures/dog-porn.jpg',
+			views: 45,
+			tags: [
+				data.tags.soloMale,
+				data.tags.premium,
+				data.tags.animal,
+				data.tags.rough
+				]
+		},
+		{
+			name: data.actors.simon.name + ' with Rosa',
+			description: 'Moaning MU!',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
+			views: 71,
+			tags: [
+				data.tags.soloMale,
+				data.tags.premium,
+				data.tags.hot,
+				data.tags.bigDick,
+				data.tags.animal,
+				data.tags.bondage
+				]
+		},
+		{
+			name: data.actors.john.name + ' fucked a goat',
+			description: 'TAPED IT HIMSELF!',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.leffesbilder.se/Bilder/album/Blandat/Roadside/ko.jpg',
+			views: 34,
+			tags: [
+				data.tags.soloMale,
+				data.tags.premium,
+				data.tags.bigDick,
+				data.tags.rough,
+				data.tags.bondage,
+				data.tags.hardcore,
+				data.tags.animal
+				]
+		},
+		{
+			name: data.actors.john.name + ' provar bondage',
+			description: 'Familjeutflykten',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://cdnimg.visualizeus.com/thumbs/92/21/bunny,fun,rabbit-9221d06d312d93e767f50196a8b10013_h.jpg',
+			views: 32,
+			tags: [
+				data.tags.premium,
+				data.tags.bigDick,
+				data.tags.rough,
+				data.tags.bondage,
+				data.tags.hardcore,
+				data.tags.animal
+				]
+		}
 	];
 
 	data.categories = {
@@ -298,6 +383,7 @@ var server = function(censored) {
 					hot: false,
 					premium: false
 				}
+
 			]
 		},
 		sneakyfilm: {
