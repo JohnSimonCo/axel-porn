@@ -14,7 +14,7 @@ var server = function(censored) {
 			name: 'Axel',
 			title: 'AxXelPorn',
 			description: 'The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.',
-			image: '',
+			image: 'http://3.bp.blogspot.com/-0XDzY3q6Uok/UbnNtcMDilI/AAAAAAAAA8I/2N4M-liOPUk/s1600/02+Curtis+Axel.png',
 			links: [
 				{
 					name: 'Axels facebook',
@@ -26,11 +26,13 @@ var server = function(censored) {
 				}
 			]
 		},
+	
+		},
 		simon: {
 			name: 'Simon',
 			title: 'SiMmePorn',
 			description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.',
-			image: '',
+			image: 'http://i1.mirror.co.uk/incoming/article2109256.ece/ALTERNATES/s615/simon-cowell-baby-2109256.png',
 			links: [
 				{
 					name: 'Simons facebook',
@@ -42,7 +44,7 @@ var server = function(censored) {
 			name: 'Sara',
 			title: 'SaRaPorn',
 			description: 'As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.',
-			image: '',
+			image: 'http://www.eikonaphotography.com/gallery/large/Sara-Balint-by-Eikona-8961-APF.jpg',
 			links: [
 				{
 					name: 'Saras facebook',
@@ -54,47 +56,23 @@ var server = function(censored) {
 			name: 'August',
 			title: 'aGGePorn',
 			description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.',
-			image: '',
+			image: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg',
 			links: [
 				{
 					name: 'Agges facebook',
-					href: 'http://www.facebook.com/agge21?ref=ts&fref=ts'
+					href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
 				}
 			],
 		},
-		simon: {
-			name: 'Simon',
-			title: 'SiMmePorn',
-			description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.',
-			image: '',
-			links: [
-				{
-					name: 'Simons facebook',
-					href: 'http://www.facebook.com/simon.halvdansson'
-				}
-			]
-		},
-		sara: {
-			name: 'Sara',
-			title: 'SaRaPorn',
-			description: 'As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.',
-			image: '',
-			links: [
-				{
-					name: 'Saras facebook',
-					href: 'http://www.facebook.com/sara.wiberg.18'
-				}
-			]
-		},
 		august: {
-			name: 'August',
-			title: 'aGGePorn',
-			description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.',
-			image: '',
+			name: 'Filip',
+			title: 'fiLLiePorn',
+			description: 'Filip is our sites maniac. He is the one to take on the Brasillian dwarfs and the challanges you give him. He has no limits.',
+			image: 'http://www.keek.fr/uploads/Image/filip%20nikolic.jpg',
 			links: [
 				{
-					name: 'Agges facebook',
-					href: 'http://www.facebook.com/agge21?ref=ts&fref=ts'
+					name: 'Filips facebook',
+					href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
 				}
 			],
 		},
@@ -102,7 +80,7 @@ var server = function(censored) {
 			name: 'John',
 			title: 'JoHnyPorn',
 			description: 'John is our hardcore legend, known for his daring videos. See his recent controversial videos.',
-			image: '',
+			image: 'http://upload.wikimedia.org/wikipedia/commons/d/dd/John_Cena_2010.jpeg',
 			links: [
 				{
 					name: 'Johns facebook',
@@ -197,7 +175,7 @@ var server = function(censored) {
 		},
 		{
 			name: data.actors.john.name + ' genom nyckelålet',
-			desc: data.actors.john.name + 's mammas födelsedagsknull',
+			description: data.actors.john.name + 's mammas födelsedagsknull',
 			src: 'videos/parentsex.mp4',
 			thumbnail: 'http://fc08.deviantart.net/fs71/f/2012/232/b/5/spy_through_the_keyhole__by_theteasingteacher-d5bqzpw.jpg',
 			views: 675,
