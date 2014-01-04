@@ -48,8 +48,7 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			selectedTags = [];
 			if(old) selectedTags.push(old);
 		} 
-		var updateTags = function() {
-			console.log(selectedTags);
+		var updateUrl = function() {
 			$location.search('tags', selectedTags);
 		}
 		$scope.selected = function(tag) {
@@ -57,7 +56,7 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 		}
 		$scope.show = function(tags) {
 			for(var tag in tags) {
-				if(contains(tags, tags[tag])) return true;
+				if(contains(selectedTags, tags[tag])) return true;
 			}
 			return false;
 		}
@@ -68,8 +67,12 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			} else if(contains(selectedTags, tag)) {
 				selectedTags.splice(selectedTags.indexOf(tag), 1);
 			}
-			updateTags();
+			updateUrl();
 		};
+		$scope.clear = function() {
+			selectedTags.splice(0, selectedTags.length);
+			updateUrl();
+		}
 	}
 ]);
 
