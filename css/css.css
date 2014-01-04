@@ -144,7 +144,6 @@ a {
     -webkit-filter: grayscale(50%);
 }
 
-
 .feed-video-title {
     font-size:24px;
     font-weight:300;
@@ -295,12 +294,17 @@ a {
 }
 
 .tags-left-item {
-	
+	width: 100%;
 }
 
 .tags-left-item a {
+    padding: 3px;
+    font-weight: 200;
+    font-size: 23px;
+    display: block;
+    width: 100%;
 	color:white;
-	transition:background-color 0.3s;
+	transition:background-color 0.2s;
 }
 
 .tags-left-item a:hover {
