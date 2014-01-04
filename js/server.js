@@ -126,7 +126,11 @@ var server = function(censored) {
 		shemale: 'Shemale',
 		hentai: 'Hentai',
 		orgy: 'Orgy',
-		simpsons: 'Simpsons'
+		simpsons: 'Simpsons',
+		sensual: 'Sensual',
+		soft: 'Soft',
+		spiritual: 'Spirutal',
+		cartoon: 'cartoon'
 	};
 
 	data.videos = [
@@ -410,6 +414,82 @@ var server = function(censored) {
 				data.tags.bigDick,
 				data.tags.rough,
 				data.tags.blonde
+				]
+		},
+				{
+			name: data.actors.simon.name + ' takes on HIM',
+			description: 'He had seen his talents',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://upload.wikimedia.org/wikipedia/commons/7/7c/Cima_da_Conegliano,_God_the_Father.jpg',
+			views: 71,
+			tags: [
+				data.tags.bigDick,
+				data.tags.sensual,
+				data.tags.soft,
+				data.tags.spiritual
+				]
+		},
+		{
+			name: data.actors.august.name + ' enters cartoon',
+			description: 'Abandoing child for sex',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://img4.vintage-cartoons-porn.com/scj/thumbs/galleries/0/639/3_713.jpg',
+			views: 282,
+			tags: [
+				data.tags.premium,
+				data.tags.rough,
+				data.tags.hardcore,
+				data.tags.milf,
+				data.tags.cartoon
+				]
+		},
+		{
+			name: data.actors.sara.name + ' alone at home',
+			description: 'Like if noone saw you',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://cdn.cutestpaw.com/wp-content/uploads/2012/07/Creative-Animal-Ads-003.jpg',
+			views: 32,
+			tags: [
+				data.tags.premium,
+				data.tags.animal
+				]
+		},
+		{
+			name: data.actors.filip.name + ' out on walk',
+			description: 'With mom',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://i298.photobucket.com/albums/mm241/herbie0420/wierdo-2.jpg',
+			views: 64,
+			tags: [
+				data.tags.hot,
+				data.tags.soft,
+				data.tags.sensual,
+				data.tags.gay
+				]
+		},
+		{
+			name: data.actors.john.name + ' having drunk sex',
+			description: 'Which hole is the right one',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://www.digitaldjtips.com/wp-content/uploads/2011/03/drunk-guy.jpg',
+			views: 544,
+			tags: [
+				data.tags.premium,
+				data.tags.rough,
+				data.tags.hardcore,
+				data.tags.bondage,
+				data.tags.blonde
+				]
+		},
+		{
+			name: data.actors.simon.name + ' taking a nap',
+			description: 'Had a pleasent conversation',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://nightclubsecurityconsulting.files.wordpress.com/2010/07/drunk-dude-1111.jpg',
+			views: 654,
+			tags: [
+				data.tags.virgin,
+				data.tags.soft
 				]
 		}
 	];
