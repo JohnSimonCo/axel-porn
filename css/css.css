@@ -358,6 +358,18 @@ a {
     font-weight: 700 !important;
 }
 
+.tags-search {
+
+}
+
+.tags-search-divider {
+
+}
+
+.tags-search-clear {
+
+}
+
 @media screen and (min-width:1919px) {
 	.standard-center {
     	max-width:1460px;
