@@ -118,8 +118,9 @@
         <div class="tags-left-container">
 
             <input type="text" ng-model="tagQuery" class="tags-search" />
+            <div class="tags-search-query-clear" ng-show="showTagsClear()" ng-click="clearTagQuery()">X</div>
  
-            <div class="tags-search-clear" ng-click="clear()" ng-show="showClear">
+            <div class="tags-search-clear" ng-click="clearTags()" ng-show="showTagsClear()">
             Clear search
             </div>
 
