@@ -8,10 +8,7 @@ var censore = false;
 
 var server = function(censored) {
 	var data = {};
-	data.tags = {
-		milf: 'MILF'
 
-	};
 	data.actors = {
 		axel: {
 			name: 'Axel',
@@ -118,6 +115,26 @@ var server = function(censored) {
 	data.star = data.actors.sara;
 
 	data.company = 'PornStarNetwork inc';
+
+
+	data.tags = {
+		milf: 'MILF'
+	};
+
+	data.videos = [
+		{
+			name: data.actors.axel.name + ' i skogen',
+			description: data.actors.axel.name + ' runkar sin mamma i skogen',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://l.yimg.com/a/i/us/shine/love/forest.jpg',
+			views: 18905,
+			tags [
+				data.tags.premium;
+				data.tags.watchedNow;
+				data.tags.hot;
+			]
+		}
+	];
 
 	data.categories = {
 		amateur: {
