@@ -38,6 +38,22 @@ pornControllers.controller('ArticleController', ['$scope', '$routeParams',
 	}
 ]);
 
+pornControllers.controller('VideosController', ['$scope', '$location',
+	function($scope, $location) {
+		var currentTags;
+		$scope.videos = server.videos;
+		$scope.selected = function() {
+
+		}
+		$scope.show = function(tags) {
+
+		}
+		$scope.toggleTag = function(tag, state) {
+
+		};
+	}
+]);
+
 pornControllers.controller('CategoryController', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.categories = server.categories;
