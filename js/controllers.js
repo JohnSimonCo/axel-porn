@@ -51,20 +51,17 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			if(old) selectedTags.push(old);
 		} 
 
-		var updateUrl = function() {
+		var updateTags = function() {
 			$location.search('tags', selectedTags);
+		}
+		$scope.updateTagQuery = function() {
 			$location.search('tagQuery', $scope.tagQuery);
 		}
 		$scope.selected = function(tag) {
 			return contains(selectedTags, tag);
 		}
 		$scope.showTag = function(tag) {
-			var show = (!$scope.tagQuery || $scope.tagQuery.length <= 0) || contains(tag.toLowerCase(), $scope.tagQuery.toLowerCase());
-			if(show)
-				show = show;
-			if(!show)
-				show = show;
-			return show;
+			return !$scope.tagQuery || $scope.tagQuery.length <= 0 || contains(tag.toLowerCase(), $scope.tagQuery.toLowerCase());
 		}
 		$scope.showVideo = function(tags) {
 			if(selectedTags.length > 0) {
@@ -83,11 +80,11 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			} else if(contains(selectedTags, tag)) {
 				selectedTags.splice(selectedTags.indexOf(tag), 1);
 			}
-			updateUrl();
+			updateTags();
 		};
 		$scope.clear = function() {
 			selectedTags.splice(0, selectedTags.length);
-			updateUrl();
+			updateTags();
 		}
 	}
 ]);
