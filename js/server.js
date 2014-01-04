@@ -377,40 +377,39 @@ var server = function(censored) {
 			description: 'Exposing frog',
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'http://www.joe-ks.com/archives_jul2011/FrogFood.jpg',
-			views: 71,
+			views: 234,
 			tags: [
-				data.tags.soloMale,
 				data.tags.hot,
-				data.tags.smallTits,
-				data.tags.bondage
+				data.tags.bondage,
+				data.tags.rough,
+				data.tags.animal,
+				data.tags.hardcore
 				]
 		},
 		{
-			name: data.actors.sara.name + ' picks up MILF',
-			description: 'Abandoing child for sex',
+			name: data.actors.sara.name + ' joins cult',
+			description: 'Trying something new',
 			src: 'videos/skogsmulle.mp4',
-			thumbnail: 'http://www.bbc.co.uk/stoke/content/images/2006/07/20/carrying_420x270.jpg',
-			views: 34,
+			thumbnail: 'http://cdn.stereogum.com/files/2010/04/arizona.jpg',
+			views: 2,
 			tags: [
-				data.tags.premium,
 				data.tags.rough,
 				data.tags.hardcore,
-				data.tags.milf,
-				]
-		},
-		{
-			name: data.actors.sara.name + ' at playground',
-			description: 'Hot deperate fathers',
-			src: 'videos/skogsmulle.mp4',
-			thumbnail: 'http://nsrlive.co.uk/wp-content/uploads/2011/12/only_men_aloud.jpeg',
-			views: 32,
-			tags: [
-				data.tags.premium,
-				data.tags.bigDick,
-				data.tags.rough,
 				data.tags.bondage,
 				data.tags.hardcore,
-				data.tags.animal
+				data.tags.blonde
+				]
+		},
+		{
+			name: data.actors.sara.name + ' meets dick',
+			description: 'Had a pleasent conversation',
+			src: 'videos/skogsmulle.mp4',
+			thumbnail: 'http://2.bp.blogspot.com/_eW8U4L0niRE/R5_DS30NQZI/AAAAAAAAAr8/PMAndxsPuXE/s320/bush%2Bdick.jpg',
+			views: 4767,
+			tags: [
+				data.tags.bigDick,
+				data.tags.rough,
+				data.tags.blonde
 				]
 		}
 	];
