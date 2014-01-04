@@ -55,10 +55,14 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			return contains(selectedTags, tag);
 		}
 		$scope.show = function(tags) {
-			for(var tag in tags) {
-				if(contains(selectedTags, tags[tag])) return true;
+			if(selectedTags.length > 0) {
+				for(var tag in tags) {
+					if(contains(selectedTags, tags[tag])) return true;
+				}
+				return false;
+			} else {
+				return true;
 			}
-			return false;
 		}
 		$scope.toggleTag = function(tag, state) {
 			state = !state;
