@@ -18,13 +18,13 @@ pornApp.config(['$routeProvider',
         templateUrl: 'partials/article.html',
         controller: 'ArticleController'
       }).
-      when('/videos', {
-        templateUrl: 'partials/category.html',
-        controller: 'CategoryController'
-      }).
-      when('/videos/:tags', {
-        templateUrl: 'partials/category.html',
-        controller: 'CategoryController'
+      /*when('/videos', {
+        templateUrl: 'partials/videos.html',
+        controller: 'VideosController'
+      }).*/
+      when('/videos/', {
+        templateUrl: 'partials/videos.html',
+        controller: 'VideosController'
       }).
       when('/category/:categoryId', {
         templateUrl: 'partials/category.html',
@@ -41,4 +41,11 @@ pornApp.config(['$routeProvider',
       otherwise({
         redirectTo: '/feed'
       });
-  }]);
+  }
+]);
+
+/*pornApp.config(['$locationProvider',
+  function($locationProvider) {
+    $locationProvider.html5Mode(true);
+  }
+]);*/
