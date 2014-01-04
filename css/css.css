@@ -299,6 +299,7 @@ a {
 }
 
 .tags-left-container {
+    border-right: 1px solid #ccc;
 	float:left;
 	width:20%;
 }
@@ -324,7 +325,6 @@ a {
 }
 
 .tags-right-container {
-    border-left: 1px solid #ccc;
 	float:left;
     width:calc(77% - 1px);
 	padding-left:3%;
@@ -359,15 +359,22 @@ a {
 }
 
 .tags-search {
+    float: left;
+}
+
+.tags-search-clear {
+    float: right;
+    
+}
+
+.tags-search-query-clear {
 
 }
 
 .tags-search-divider {
-
-}
-
-.tags-search-clear {
-
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ccc;
 }
 
 @media screen and (min-width:1919px) {
