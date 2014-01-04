@@ -43,26 +43,40 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 		$scope.videos = server.videos;
 		$scope.tags = server.tags;
 		var selectedTags = $location.search().tags;
-		var updateTags = function() {
+		if(typeof selectedTags !== 'object') {
+			var old = selectedTags;
+			selectedTags = [];
+			if(old) selectedTags.push(old);
+		} 
+		var updateUrl = function() {
 			$location.search('tags', selectedTags);
 		}
 		$scope.selected = function(tag) {
 			return contains(selectedTags, tag);
 		}
 		$scope.show = function(tags) {
-			for(var tag in tags) {
-				if(contains(tags, tags[tag])) return true;
+			if(selectedTags.length > 0) {
+				for(var tag in tags) {
+					if(contains(selectedTags, tags[tag])) return true;
+				}
+				return false;
+			} else {
+				return true;
 			}
-			return false;
 		}
 		$scope.toggleTag = function(tag, state) {
+			state = !state;
 			if(state) {
 				selectedTags.push(tag);
 			} else if(contains(selectedTags, tag)) {
 				selectedTags.splice(selectedTags.indexOf(tag), 1);
 			}
-			updateTags();
+			updateUrl();
 		};
+		$scope.clear = function() {
+			selectedTags.splice(0, selectedTags.length);
+			updateUrl();
+		}
 	}
 ]);
 

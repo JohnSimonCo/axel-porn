@@ -118,7 +118,7 @@
 
         <div class="tags-left-container">
             <div class="tags-left-item" ng-repeat="tag in tags">
-                <a ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
+                <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
             </div>
         </div>
         
@@ -132,7 +132,7 @@
                 
             </div>
             
-            <div class="feed-video" ng-repeat="video in currentCategory.videos">
+            <div class="feed-video" ng-repeat="video in videos" ng-show="show(video.tags)">
                     
                 <a ng-href="{{video.href}}">
                     <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
