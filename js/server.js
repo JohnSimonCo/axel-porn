@@ -384,6 +384,7 @@ var server = function(censored) {
 	data.footer = 'By using ' + data.star.title + ' you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can cancel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright &copy; 2013 ' + data.company + '.';
 	
 	data.about = data.star.title + ' is a project designed to help people all around the world access our wide collection of ' + data.star.name + ' porn. We consider it a basic human  right to have access to pornographic content with ' + data.star.name + ' in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave people commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.';
+	
 	var censore = function(obj) {
 		for(var key in obj) {
 			if(key !== 'href') {
