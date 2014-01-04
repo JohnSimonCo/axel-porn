@@ -289,6 +289,42 @@ a {
     margin: 0px;
 }
 
+.tags-left-container {
+	float:left;
+	width:20%;
+}
+
+.tags-left-item {
+	
+}
+
+.tags-left-item a {
+	color:white;
+	transition:background-color 0.3s;
+}
+
+.tags-left-item a:hover {
+	background-color:#c0392b;
+}
+
+
+.tags-right-container {
+	float:left;
+	width:77%;
+	padding-left:3%;
+}
+
+.tags-right-top {
+	width:100%;
+	height:80px;
+	background-color:#333;
+}
+
+.tags-right-video-container {
+	float:left;
+	width:300px;
+}
+
 @media screen and (min-width:1919px) {
 	.standard-center {
     	max-width:1460px;
