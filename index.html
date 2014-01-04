@@ -118,11 +118,13 @@
         <div class="tags-left-container">
 
             <input type="text" ng-model="tagQuery" class="tags-search" />
-            <hr class="tags-search-divider"></hr>
-            
-            <div class="tags-search-clear" ng-click="clear()" ng-show="showClear">
+            <div class="tags-search-query-clear" ng-show="showTagQueryClear()" ng-click="clearTagQuery()">X</div>
+ 
+            <div class="tags-search-clear" ng-click="clearTags()" ng-show="showTagsClear()">
             Clear search
             </div>
+
+            <div class="tags-search-divider"></div>
 
             <div class="tags-left-item" ng-repeat="tag in tags" ng-show="showTag(tag)">
                 <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>

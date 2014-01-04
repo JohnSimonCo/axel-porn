@@ -77,8 +77,11 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 				return true;
 			}
 		}
-		$scope.showClear = function() {
+		$scope.showTagQueryClear = function() {
 			return $scope.tagQuery && $scope.tagQuery.length > 0; 
+		}
+		$scope.showTagsClear = function() {
+			return selectedTags.length > 0; 
 		}
 		$scope.toggleTag = function(tag, state) {
 			state = !state;
@@ -89,9 +92,12 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			}
 			updateUrl();
 		};
-		$scope.clear = function() {
+		$scope.clearTags = function() {
 			selectedTags.splice(0, selectedTags.length);
 			updateUrl();
+		}
+		$scope.clearTagQuery = function() {
+			$scope.tagQuery = '';
 		}
 	}
 ]);
