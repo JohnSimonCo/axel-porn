@@ -40,9 +40,3 @@ pornApp.config(['$routeProvider',
       });
   }
 ]);
-
-/*pornApp.config(['$locationProvider',
-  function($locationProvider) {
-    $locationProvider.html5Mode(true);
-  }
-]);*/

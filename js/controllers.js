@@ -51,7 +51,7 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 		} 
 
 		var updateUrl = function() {
-			$location.search('tags', selectedTags);
+			$location.search('tags', selectedTags).replace();
 		}
 		$scope.selected = function(tag) {
 			return contains(selectedTags, tag);
