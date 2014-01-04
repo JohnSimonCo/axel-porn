@@ -2,7 +2,7 @@ var pornControllers = angular.module('pornControllers', []);
  
 pornControllers.controller('DefaultController', ['$scope',
 	function ($scope) {
-		$scope.person = person;
+		$scope.star = server.star;
 
 		$scope.premium = function() { return server.premium; };
 		$scope.goPremium = function() {
@@ -12,6 +12,8 @@ pornControllers.controller('DefaultController', ['$scope',
 		$scope.togglePremiumSignup = function(state) {
 			$scope.premiumSignup = state;
 		};
+
+		$scope.footer = server.footer;
 	}
 ])
 
@@ -45,12 +47,12 @@ pornControllers.controller('CategoryController', ['$scope', '$routeParams',
 	
 pornControllers.controller('AboutController', ['$scope', 
 	function($scope) {
-		
+		$scope.about = server.about;
 	}
 ]);
 	
 pornControllers.controller('LinksController', ['$scope', 
 	function($scope) {
-		$scope.links = person.links;
+		$scope.links = server.star.links;
 	}
 ]);
