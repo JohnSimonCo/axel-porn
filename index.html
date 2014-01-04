@@ -112,11 +112,9 @@
 
     <script type="text/ng-template" id="partials/category.html">
     
-    
-    	
     	<div class="tags-left-container">
-    		<div class="tags-left-item" ng-repeat="category in categories">
-    			<a href="{{category.href}}">{{category.name}}</a>
+    		<div class="tags-left-item" ng-repeat="tag in tags">
+    			<a ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
     		</div>
     	</div>
     	
