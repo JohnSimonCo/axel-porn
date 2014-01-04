@@ -40,10 +40,16 @@ pornControllers.controller('ArticleController', ['$scope', '$routeParams',
 
 pornControllers.controller('VideosController', ['$scope', '$location',
 	function($scope, $location) {
-		var currentTags;
-		$scope.videos = server.videos;
-		$scope.selected = function() {
+		var parseTags = function() {
 
+		}
+		var currentTags = function() {
+			$location.search();
+			return tags;
+		}();
+		$scope.videos = server.videos;
+		$scope.selected = function(tag) {
+			return currentTags.indexOf(tag) > -1;
 		}
 		$scope.show = function(tags) {
 
