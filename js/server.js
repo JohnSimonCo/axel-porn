@@ -112,7 +112,7 @@ var server = function(censored) {
 		}
 	};
 
-	data.star = data.actors.sara;
+	data.star = data.actors.simon;
 
 	data.company = 'PornStarNetwork inc';
 
