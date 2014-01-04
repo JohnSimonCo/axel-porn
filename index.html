@@ -118,7 +118,7 @@
 
         <div class="tags-left-container">
             <div class="tags-left-item" ng-repeat="tag in tags">
-                <a ng-class="{tags-selected: selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
+                <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
             </div>
         </div>
         
