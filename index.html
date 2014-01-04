@@ -116,17 +116,22 @@
     		<div class="category-left-item">
     			<a href="{{category.href}}">{{category.name}}</a>
     		</div>
+    	</div>
     	
+    	<div class="category-right-container">
+    	
+    		<div class="category-right-top">
+    			{{currentCategory.name}}
+    		</div>
+    		
+    		<div class="category-right-video-container">
+    			<div ng-repeat="video in currentCategory.videos">
+    				
+    			</div>
+    		</div>
+    		
     	</div>
 
-		/*
-
-        <ul>
-            <li class="standard-list" ng-repeat="category in categories">
-                <a href="{{category.href}}"><h3>{{category.name}}</h3></a>
-            </li>
-        </ul>
-        
         
         
         <ul>
@@ -144,7 +149,7 @@
             </li>
         </ul>
         
-        */
+        
         
     </script>
 
