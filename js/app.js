@@ -10,7 +10,7 @@ pornApp.config(['$routeProvider',
         templateUrl: 'partials/feed.html',
         controller: 'FeedController'
       }).
-      when('/video/:category/:videoId', {
+      when('/video/:videoId', {
         templateUrl: 'partials/video.html',
         controller: 'VideoController'
       }).
