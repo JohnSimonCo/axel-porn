@@ -8,78 +8,78 @@ var createData = function() {
 	var data = {};
 	data.actors = {
 		axel: {
-			name: cs('Axel'),
+			name: 'Axel',
 			title: cs('AxXelPorn'),
 			description: cs('The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.'),
 			image: cs('http://3.bp.blogspot.com/-0XDzY3q6Uok/UbnNtcMDilI/AAAAAAAAA8I/2N4M-liOPUk/s1600/02+Curtis+Axel.png'),
 			links: [
 				{
-					name: cs('Axels facebook'),
-					href: cs('http://www.facebook.com/axel.k.lindgren')
+					name: 'Axels facebook',
+					href: 'http://www.facebook.com/axel.k.lindgren'
 				},
 				{
-					name: cs('Axels youtube'),
-					href: cs('http://www.youtube.com/user/swifTyBobCaT')
+					name: 'Axels youtube',
+					href: 'http://www.youtube.com/user/swifTyBobCaT'
 				}
 			]
 		},
 		simon: {
-			name: cs('Simon'),
+			name: 'Simon',
 			title: cs('SiMmePorn'),
 			description: cs('Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.'),
 			image: cs('http://i1.mirror.co.uk/incoming/article2109256.ece/ALTERNATES/s615/simon-cowell-baby-2109256.png'),
 			links: [
 				{
-					name: cs('Simons facebook'),
-					href: cs('http://www.facebook.com/simon.halvdansson')
+					name: 'Simons facebook',
+					href: 'http://www.facebook.com/simon.halvdansson'
 				}
 			]
 		},
 		sara: {
-			name: cs('Sara'),
+			name: 'Sara',
 			title: cs('SaRaPorn'),
 			description: cs('As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.'),
 			image: cs('http://www.eikonaphotography.com/gallery/large/Sara-Balint-by-Eikona-8961-APF.jpg'),
 			links: [
 				{
-					name: cs('Saras facebook'),
-					href: cs('http://www.facebook.com/sara.wiberg.18')
+					name: 'Saras facebook',
+					href: 'http://www.facebook.com/sara.wiberg.18'
 				}
 			]
 		},
 		august: {
-			name: cs('August'),
+			name: 'August',
 			title: cs('aGGePorn'),
 			description: cs('August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.'),
 			image: cs('http://www.shootersmma.com/images/news/august_wallen_big.jpg'),
 			links: [
 				{
-					name: cs('Agges facebook'),
-					href: cs('http://www.shootersmma.com/images/news/august_wallen_big.jpg')
+					name: 'Agges facebook',
+					href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
 				}
 			],
 		},
 		filip: {
-			name: cs('Filip'),
+			name: 'Filip',
 			title: cs('fiLLiePorn'),
 			description: cs('Filip is our sites maniac. He is the one to take on the Brasillian dwarfs and the challanges you give him. He has no limits.'),
 			image: cs('http://www.keek.fr/uploads/Image/filip%20nikolic.jpg'),
 			links: [
 				{
-					name: cs('Filips facebook'),
-					href: cs('http://www.shootersmma.com/images/news/august_wallen_big.jpg')
+					name: 'Filips facebook',
+					href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
 				}
 			],
 		},
 		john: {
-			name: cs('John'),
+			name: 'John',
 			title: cs('JoHnyPorn'),
 			description: cs('John is our hardcore legend, known for his daring videos. See his recent controversial videos.'),
 			image: cs('http://upload.wikimedia.org/wikipedia/commons/d/dd/John_Cena_2010.jpeg'),
 			links: [
 				{
-					name: cs('Johns facebook'),
-					href: cs('http://www.facebook.com/johnrappfarnes')
+					name: 'Johns facebook',
+					href: 'http://www.facebook.com/johnrappfarnes'
 				}
 			]
 		}
@@ -409,16 +409,16 @@ var createData = function() {
 	];
 
 	data.sections = {
-		premium: new Section(cs('Premium'), function(video) {
+		premium: new Section('Premium', function(video) {
 			return contains(video.tags, data.tags.premium);
 		}),
-		hot: new Section(cs('Hot'), function(video) {
+		hot: new Section('Hot', function(video) {
 			return contains(video.tags, data.tags.hot);
 		}),
-		mostWatched: new Section(cs('Most watched'), function(video) {
+		mostWatched: new Section('Most watched', function(video) {
 			return video.views > 100;
 		}),
-		watchedNow: new Section(cs('Watched right now'), function(video) {
+		watchedNow: new Section('Watched right now', function(video) {
 			return contains(video.tags, data.tags.watchedNow);
 		})
 	};
@@ -645,10 +645,10 @@ var createData = function() {
 			href: cs('')
 		},
 		{
-			headline: cs('GO PREMIUM'),
-			summary: cs('Unluck exclusive videos!'),
+			headline: 'GO PREMIUM',
+			summary: 'Unluck exclusive videos!',
 			content: cs('By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more.'),
-			image: cs('http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg'),
+			image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg',
 			href: cs('')
 		},
 		{
@@ -692,7 +692,7 @@ var createData = function() {
 
 	data.footer = cs('By using ' + data.star.title + ' you are agreeing to our Terms of Service which means we have full rights to your soul and your firstborn child. You can cancel this deal by emailing us. Unfortunately our email service does not currently exist nor will it ever do so, too fucking bad. Copyright © 2013 ' + data.company + '.');
 
-	data.about = cs(data.star.title + ' is a project designed to help data.actors all around the world access our wide collection of ' + data.star.name + ' porn. We consider it a basic human  right to have access to pornographic content with ' + data.star.name + ' in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave data.actors commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.');
+	data.about = cs(data.star.title + ' is a project designed to help people all around the world access our wide collection of ' + data.star.name + ' porn. We consider it a basic human  right to have access to pornographic content with ' + data.star.name + ' in it. This statement is supported by the UN, NATO and the Republic of North Korea. This mission was taken upon by three brave data.actors commonly refered to as "the three gods". Their real names are Simon, John and Sara. Heil them.');
 	
 	initServer(data);	
 }();
