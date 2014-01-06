@@ -1,6 +1,11 @@
-var censored = false;
+var censored = true;
 
-var server = function() {
+function cs(str, alt) {
+	if(censored) return alt ? alt : lorum.get(str.length);
+	else return str;
+}
+
+function initServer(data) {
 	for(var id in data.videos) {
 		var video = data.videos[id];
 		video.href = '#/video/' + id;
@@ -20,22 +25,22 @@ var server = function() {
 		data.news[article].href = '#/article/' + article;
 	}
 
-	if(censored) {
-		var censore = function(object) {
-			for(var key in object) {
-				var prop = object[key];
-					if(typeof prop === 'string') {
-						object[key] = lorum.get(prop.length);
-					} else if(typeof prop === 'object') {
-						censore(prop);
-					}
-			}
-		}
-		censore(data);
-	}
+	window.server = data;
+}
 
-	return data;
-}();
+/*if(censored) {
+	var censore = function(object) {
+		for(var key in object) {
+			var prop = object[key];
+				if(typeof prop === 'string') {
+					object[key] = lorum.get(prop.length);
+				} else if(typeof prop === 'object') {
+					censore(prop);
+				}
+		}
+	}
+	censore(data);
+}*/
 
 /*if(censored) {
 	var censore = function(object) {
