@@ -1,6 +1,7 @@
-var Section = function(name, assign) {
+var Section = function(name, assign, order) {
 	this.name = name;
 	this.assign = assign;
+	this.order = order;
 	this.videos = [];
 }
 
@@ -411,16 +412,16 @@ var createData = function() {
 	data.sections = {
 		premium: new Section('Premium', function(video) {
 			return contains(video.tags, data.tags.premium);
-		}),
+		}, 0),
 		hot: new Section('Hot', function(video) {
 			return contains(video.tags, data.tags.hot);
-		}),
+		}, 1),
 		mostWatched: new Section('Most watched', function(video) {
 			return video.views > 100;
-		}),
+		}, 3),
 		watchedNow: new Section('Watched right now', function(video) {
 			return contains(video.tags, data.tags.watchedNow);
-		})
+		}, 4)
 	};
 
 

@@ -29,12 +29,13 @@ pornControllers.controller('FeedController', ['$scope',
 	function ($scope) {
 		$scope.sections = server.sections;
 		$scope.news = server.news;
+		$scope.order = 'name';
 	}
 ]);
  
 pornControllers.controller('VideoController', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
-		$scope.video = server.categories[$routeParams.category].videos[$routeParams.videoId];
+		$scope.video = server.videos[$routeParams.videoId];
 		$scope.found = typeof $scope.video !== 'undefined';
 	}
 ]);
@@ -56,7 +57,10 @@ pornControllers.controller('VideosController', ['$scope', '$location', '$filter'
 			var old = selectedTags;
 			selectedTags = [];
 			if(old) selectedTags.push(old);
-		} 
+		}
+
+		$scope.orderProp = 'name';
+
 		var updateUrl = function() {
 			$location.search('tags', selectedTags).replace();
 		}

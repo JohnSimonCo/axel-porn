@@ -1,4 +1,4 @@
-var censored = true;
+var censored = false;
 
 function cs(str, alt) {
 	if(censored) return alt ? alt : lorum.get(str.length);

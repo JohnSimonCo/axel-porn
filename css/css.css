@@ -404,6 +404,13 @@ a {
 	}
 }
 
+.standard-list {
+    padding: 0px;
+}
+.standard-list li {
+    text-decoration: none;
+}
+
 
 ::-webkit-scrollbar {
   width: 12px;  /* for vertical scrollbars */

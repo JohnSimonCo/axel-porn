@@ -27,26 +27,31 @@
 		    <div class="feed-left">
 		
 		        <div class="feed-title">Videos</div>
-		        <div class="feed-section" ng-repeat="section in sections">
-		        
-		            <div class="feed-divider"></div>
-		    
-		            <div class="feed-section-title" ng-class="{premium: section.name == 'Premium'}">{{section.name}}</div>
-		            
-		            <div class="feed-video" ng-repeat="video in section.videos track by $index">
-		
-		                <a ng-href="{{video.href}}">
-		                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
-		                </a>
-		                
-		                <a ng-href="{{video.href}}">
-		                    <div class="feed-video-title">{{video.name}}</div>
-		                </a>
-		                
-		                <div class="feed-video-views">VIEWS: {{video.views}}</div>
-		             </div>
-		        </div>
-		    </div>
+
+                <ul class="standard-list">
+
+    		        <li class="feed-section" ng-repeat="section in sections | orderBy:order">
+    		        
+    		            <div class="feed-divider"></div>
+    		    
+    		            <div class="feed-section-title" ng-class="{premium: section.name == 'Premium'}">{{section.name}}</div>
+    		            
+    		            <div class="feed-video" ng-repeat="video in section.videos track by $index">
+    		
+    		                <a ng-href="{{video.href}}">
+    		                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
+    		                </a>
+    		                
+    		                <a ng-href="{{video.href}}">
+    		                    <div class="feed-video-title">{{video.name}}</div>
+    		                </a>
+    		                
+    		                <div class="feed-video-views">VIEWS: {{video.views}}</div>
+    		             </div>
+    		        </li>
+    		    </ul>
+
+            </div>
 		    
 		    <div class="feed-right">
 
@@ -89,18 +94,9 @@
         
         </div>
 
-        <div ng-show="found && (video.premium && !premium())">
+        <div ng-show="found && (video.premium && !premium())" ng-include="'partials/premium.html'"></div>
 
-            <h3 class="premium">You need premium bro</h3>
-            
-        </div>
-
-
-        <div ng-hide="found">
-            
-            <div class="404 standard-center">404 Page not found, this porn video is not yet created... :(</div>
-            
-        </div>
+        <div ng-hide="found" ng-include="'partials/404.html'"></div>
     </script>
 
     <script type="text/ng-template" id="partials/article.html">
@@ -111,14 +107,14 @@
             <p>{{article.content}}</p>
 
         </div>
-        <div ng-hide="{{found}}"><h3>404 not found :(</h3></div>
+        <div ng-hide="found" ng-include="'partials/404.html'"></div>
     </script>
 
     <script type="text/ng-template" id="partials/videos.html">
 
         <div class="tags-left-container">
 
-            <input type="text" ng-model="tagQuery" class="tags-search" />
+            <input ng-model="tagQuery" class="tags-search" />
             <div class="tags-search-query-clear" ng-show="showTagQueryClear()" ng-click="clearTagQuery()">X</div>
  
             <div class="tags-search-clear" ng-click="clearTags()" ng-show="showTagsClear()">
@@ -127,11 +123,12 @@
 
             <div class="tags-search-divider"></div>
 
-            <div class="tags-left-item" ng-repeat="tag in tags" ng-show="showTag(tag)">
-            <!-- <div class="tags-left-item" ng-repeat="tag in tags | filter:tagQuery"> -->
+            <ul class="standard-list">
+                <li class="tags-left-item" ng-repeat="tag in tags | filter:tagQuery">
+                    <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
+                </li>
+            </ul>
 
-                <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
-            </div>
         </div>
         
         <div class="tags-right-container">
@@ -139,12 +136,17 @@
             <div class="tags-right-top">
 
                 <div class="tags-right-top-title">
-                {{currentCategory.name}}
+                Sort by:
+                  <select ng-model="orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="-views">Most viewed</option>
+                    <option value="-tags.length">Most tagged</option>
+                  </select>
                 </div>
                 
             </div>
             
-            <div class="feed-video" ng-repeat="video in videos" ng-show="showVideo(video.tags)">
+            <div class="feed-video" ng-repeat="video in videos | orderBy:orderProp" ng-show="showVideo(video.tags)">
                     
                 <a ng-href="{{video.href}}">
                     <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
@@ -172,6 +174,14 @@
             <a class="link" ng-href="{{link.href}}">{{link.name}}</a>
         </div>
         
+    </script>
+
+    <script type="text/ng-template" id="partials/404.html">
+        <h3>LOL! 404 not found bitch.</h3>
+    </script>
+
+    <script type="text/ng-template" id="partials/premium.html">
+        <h3 class="premium">Fuck you bitch you aint got premium</h3>
     </script>
     
 </head>
