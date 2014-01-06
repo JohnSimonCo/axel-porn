@@ -8,88 +8,86 @@ var data = function() {
 	var data = {};
 	data.actors = {
 		axel: {
-			$name: 'Axel',
+			name: 'Axel',
 			title: 'AxXelPorn',
-			_title: 'Axels hemsida',
 			description: 'The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.',
 			image: 'http://3.bp.blogspot.com/-0XDzY3q6Uok/UbnNtcMDilI/AAAAAAAAA8I/2N4M-liOPUk/s1600/02+Curtis+Axel.png',
 			links: [
 				{
-					$name: 'Axels facebook',
-					$href: 'http://www.facebook.com/axel.k.lindgren'
+					name: 'Axels facebook',
+					href: 'http://www.facebook.com/axel.k.lindgren'
 				},
 				{
-					$name: 'Axels youtube',
-					$href: 'http://www.youtube.com/user/swifTyBobCaT'
+					name: 'Axels youtube',
+					href: 'http://www.youtube.com/user/swifTyBobCaT'
 				}
 			]
 		},
 		simon: {
-			$name: 'Simon',
+			name: 'Simon',
 			title: 'SiMmePorn',
 			description: 'Simon is our girl magnet! He appears in our exlusive softcore premium videos. Some say he\'s secretly into bondage.',
 			image: 'http://i1.mirror.co.uk/incoming/article2109256.ece/ALTERNATES/s615/simon-cowell-baby-2109256.png',
 			links: [
 				{
-					$name: 'Simons facebook',
-					$href: 'http://www.facebook.com/simon.halvdansson'
+					name: 'Simons facebook',
+					href: 'http://www.facebook.com/simon.halvdansson'
 				}
 			]
 		},
 		sara: {
-			$name: 'Sara',
+			name: 'Sara',
 			title: 'SaRaPorn',
 			description: 'As our only female actor, this one blonde girl is responsible for making this pornsite non-gay.',
 			image: 'http://www.eikonaphotography.com/gallery/large/Sara-Balint-by-Eikona-8961-APF.jpg',
 			links: [
 				{
-					$name: 'Saras facebook',
-					$href: 'http://www.facebook.com/sara.wiberg.18'
+					name: 'Saras facebook',
+					href: 'http://www.facebook.com/sara.wiberg.18'
 				}
 			]
 		},
 		august: {
-			$name: 'August',
+			name: 'August',
 			title: 'aGGePorn',
 			description: 'August is the ultimate MILF-hunter. When he\'s around, no mother is safe. You can choose from a selection of his videos when he takes on women you never could.',
 			image: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg',
 			links: [
 				{
-					$name: 'Agges facebook',
-					$href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
+					name: 'Agges facebook',
+					href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
 				}
 			],
 		},
 		filip: {
-			$name: 'Filip',
+			name: 'Filip',
 			title: 'fiLLiePorn',
 			description: 'Filip is our sites maniac. He is the one to take on the Brasillian dwarfs and the challanges you give him. He has no limits.',
 			image: 'http://www.keek.fr/uploads/Image/filip%20nikolic.jpg',
 			links: [
 				{
-					$name: 'Filips facebook',
-					$href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
+					name: 'Filips facebook',
+					href: 'http://www.shootersmma.com/images/news/august_wallen_big.jpg'
 				}
 			],
 		},
 		john: {
-			$name: 'John',
+			name: 'John',
 			title: 'JoHnyPorn',
 			description: 'John is our hardcore legend, known for his daring videos. See his recent controversial videos.',
 			image: 'http://upload.wikimedia.org/wikipedia/commons/d/dd/John_Cena_2010.jpeg',
 			links: [
 				{
-					$name: 'Johns facebook',
-					$href: 'http://www.facebook.com/johnrappfarnes'
+					name: 'Johns facebook',
+					href: 'http://www.facebook.com/johnrappfarnes'
 				}
 			]
 		}
 	};
 
-	data.star = data.actors.simon;
+	data.star = data.actors.axel;
 
 	data.company = 'PornStarNetwork inc';
-
 
 	data.tags = {
 		premium: 'Premium',
@@ -146,12 +144,10 @@ var data = function() {
 			description: data.actors.axel.name + ' pappa visar hur man gör',
 			src: 'videos/skogsmulle.mp4',
 			thumbnail: 'http://cdn01.nyheter24.se/9b24e4c10802021d01/2012/11/09/767899/sp0bbfc4.jpg',
-			views: 905,
+			views: 95,
 			tags: [
 				data.tags.amateur,
-				data.tags.premium,
 				data.tags.watchedNow,
-				data.tags.hot,
 				data.tags.soloMeal
 			]
 		},
@@ -412,7 +408,23 @@ var data = function() {
 		}
 	];
 
-	data.categories = {
+	data.sections = {
+		premium: new Section('Premium', function(video) {
+			return contains(video.tags, data.tags.premium);
+		}),
+		hot: new Section('Hot', function(video) {
+			return contains(video.tags, data.tags.hot);
+		}),
+		mostWatched: new Section('Most watched', function(video) {
+			return video.views > 100;
+		}),
+		watchedNow: new Section('Watched right now', function(video) {
+			return contains(video.tags, data.tags.watchedNow);
+		})
+	};
+
+
+	/*data.categories = {
 		amateur: {
 			name: 'Amateur',
 			videos : [
@@ -594,22 +606,7 @@ var data = function() {
 		}
 	};
 
-	data.defaultCategory = 'amateur';
-
-	data.sections = {
-		premium: new Section('Premium', function(video) {
-			return video.tags.premium;
-		}),
-		hot: new Section('Hot', function(video) {
-			return video.tags.hot;
-		}),
-		mostWatched: new Section('Most watched', function(video) {
-			return video.views > 100;
-		}),
-		watchedNow: new Section('Watched right now', function(video) {
-			return video.watched;
-		})
-	};
+	data.defaultCategory = 'amateur';*/
 
 	data.news = [
 		{
@@ -617,77 +614,77 @@ var data = function() {
 			summary: 'TAPED IT HIMSELF!',
 			content: 'It\'s maddafakking mental!',
 			image: 'http://angelforisrael.files.wordpress.com/2013/04/ahmadinejad-goat-fuck.jpg',
-			$href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/animal/2'
+			href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/animal/2'
 		},
 		{
 			headline: data.actors.axel.name + ' jerked off!',
 			summary: 'Watch that cum!',
 			content: 'This must be the ultimate self-pleasing-method.',
 			image: 'http://art.ngfiles.com/images/154/myfuckinmess_dick-vader.jpg',
-			$href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/amateur/1c'
+			href: 'file:///C:/Users/Sara/Documents/GitHub/axel-porn/index.html#/video/amateur/1c'
 		},
 		{
 			headline: data.actors.simon.name + ' is acting INSANE!',
 			summary: 'Click to watch!',
 			content: 'We are not going to tell you why because we simply can\'t explain it! Why would anyone do somthing like that, we just can\'t understand.',
 			image: 'http://1.bp.blogspot.com/-55QPbB5MZsY/TjIEVQCS4sI/AAAAAAAAAK4/-RiHle8WmsI/s1600/monkey-with-his-penis-in-his-mouth.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: 'You have done well',
 			summary: 'More views per day than ever!',
 			content: 'Today we can proudly present new all time records! We have had 2527583 unique visitors this month, which means an average of 84252 unique visitors a day! Our most popular clip is amazlingly still' + name + 'i skogen!',
 			image: 'http://www.colourbox.com/preview/4297446-685999-vector-diagram-with-red-arrow-going-up.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: 'New premium Video!',
 			summary: 'CAUTION! SUPER SEXY!',
 			content: 'We have added a new, mindblowingly sexy video you just can\'t believe is real! By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more',
 			image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: 'GO PREMIUM',
 			summary: 'Unluck exclusive videos!',
 			content: 'By going premium, you will unlock a new world of daring videos. You will gain access to live web cameras and a lot more.',
 			image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: 'Inspire us!',
 			summary: 'This is your chance!',
 			content: 'By going premium you will be able to contact us data.starally and tell us about your data.staral preferences. We lissen to our visitors and make changes. Dont miss your chance to be a part of the developement of this sight.',
 			image: 'http://www.weareprivate.net/blog/wp-content/uploads/fetish-chair.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: 'New premium video!',
 			summary: 'How to fap like a GOD!',
 			content: 'Learn about this amazing new method! Watch him please himself like no man before him. He will teach you the tecknics you did not even no exist!',
 			image: 'http://creditspreadslayer.com/wp-content/uploads/2013/12/premium1.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: 'Want to be seen?',
 			summary: 'We want new stars!',
 			content: 'If you like being seen, we have a offer you simply can\'t refuse! Join us and earn some big money. We are right now searching for new stars ready to show it all for our cameras. Any age, bodyshape and fetish is accepted here.',
 			image: 'http://3.bp.blogspot.com/_YvpXQckVIuk/Se7WoQvxv2I/AAAAAAAAAI0/azbZNN41PpA/s200/gold+star+sxc',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: data.actors.sara.name + ' experiences nature',
 			summary: 'Fucked by a tree!',
 			content: 'After reading a article in Expressen, Sara decides to give eko-sex a try.',
 			image: 'http://th04.deviantart.net/fs70/PRE/i/2012/070/a/f/mean_tree_____bad_family___internal_art_1_by_floating_eyeball-d4shflx.jpg',
-			$href: ''
+			href: ''
 		},
 		{
 			headline: data.actors.john.name + ' returns',
 			summary: 'Making new exlusive video!',
 			content: 'Coming back from his celibat life in Spain he is hornier than ever, watch out for his new hot videos.',
 			image: 'http://upload.wikimedia.org/wikipedia/commons/3/31/Highland_Cattle_bull.jpg',
-			$href: ''
+			href: ''
 		}
 	];
 
