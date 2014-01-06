@@ -128,6 +128,8 @@
             <div class="tags-search-divider"></div>
 
             <div class="tags-left-item" ng-repeat="tag in tags" ng-show="showTag(tag)">
+            <!-- <div class="tags-left-item" ng-repeat="tag in tags | filter:tagQuery"> -->
+
                 <a ng-class="{'tags-selected': selected(tag)}" ng-click="toggleTag(tag, selected(tag))">{{tag}}</a>
             </div>
         </div>

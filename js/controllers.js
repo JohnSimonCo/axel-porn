@@ -46,8 +46,8 @@ pornControllers.controller('ArticleController', ['$scope', '$routeParams',
 	}
 ]);
 
-pornControllers.controller('VideosController', ['$scope', '$location',
-	function($scope, $location) {
+pornControllers.controller('VideosController', ['$scope', '$location', '$filter',
+	function($scope, $location, $filter) {
 		$scope.videos = server.videos;
 		$scope.tags = server.tags;
 
@@ -57,7 +57,6 @@ pornControllers.controller('VideosController', ['$scope', '$location',
 			selectedTags = [];
 			if(old) selectedTags.push(old);
 		} 
-
 		var updateUrl = function() {
 			$location.search('tags', selectedTags).replace();
 		}
