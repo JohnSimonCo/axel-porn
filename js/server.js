@@ -5,6 +5,22 @@ function cs(str, alt) {
 	else return str;
 }
 
+function co(obj, alt) {
+	if(censored) return alt ? alt : censore(obj);
+	else return obj;
+}
+
+function censore(object) {
+	for(var key in object) {
+		var prop = object[key];
+		if(typeof prop === 'string') {
+			object[key] = lorum.get(prop.length);
+		} else if(typeof prop === 'object') {
+			censore(prop);
+		}
+	}
+}
+
 function initServer(data) {
 	for(var id in data.videos) {
 		var video = data.videos[id];

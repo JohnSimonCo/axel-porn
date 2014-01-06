@@ -10,7 +10,7 @@ var createData = function() {
 	data.actors = {
 		axel: {
 			name: 'Axel',
-			title: cs('AxXelPorn'),
+			title: cs('AxXelPorn', 'Axels hemsida'),
 			description: cs('The main star of our humble pornsite is Axel. Often apearing alone in his video, he teaches you everything there is to know, and more, about self-pleasing.'),
 			image: cs('http://3.bp.blogspot.com/-0XDzY3q6Uok/UbnNtcMDilI/AAAAAAAAA8I/2N4M-liOPUk/s1600/02+Curtis+Axel.png'),
 			links: [

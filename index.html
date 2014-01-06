@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="pornApp" ng-controller="DefaultController">
+<html ng-app="pornApp" ng-controller="MainController">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
@@ -19,9 +19,9 @@
     <script src="js/controllers.js"></script>
     <script src="js/script.js"></script>
 
-    <title ng-bind="star.title">Porn</title>
+    <title ng-bind="star.title">Loading...</title>
 
-    <script type="text/ng-template" id="partials/feed.html">
+    <script type="text/ng-template" id="templates/feed.html">
     	<div class="feed-container standard-center">
 
 		    <div class="feed-left">
@@ -30,24 +30,13 @@
 
                 <ul class="standard-list">
 
-    		        <li class="feed-section" ng-repeat="section in sections | orderBy:order">
+    		        <li class="feed-section" ng-repeat="section in sections | orderBy:'order'">
     		        
     		            <div class="feed-divider"></div>
     		    
     		            <div class="feed-section-title" ng-class="{premium: section.name == 'Premium'}">{{section.name}}</div>
     		            
-    		            <div class="feed-video" ng-repeat="video in section.videos track by $index">
-    		
-    		                <a ng-href="{{video.href}}">
-    		                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
-    		                </a>
-    		                
-    		                <a ng-href="{{video.href}}">
-    		                    <div class="feed-video-title">{{video.name}}</div>
-    		                </a>
-    		                
-    		                <div class="feed-video-views">VIEWS: {{video.views}}</div>
-    		             </div>
+    		            <div ng-repeat="video in section.videos" ng-include="'partials/video.html'"></div>
     		        </li>
     		    </ul>
 
@@ -76,10 +65,8 @@
 
     </script>
 
-    <script type="text/ng-template" id="partials/video.html">
-        <div ng-show="found && (premium() || !video.premium)">
-
-            <div ng-show="found" class="standard-center">
+    <script type="text/ng-template" id="templates/video.html">
+            <div ng-show="found && !premiumVideo(video)" class="standard-center">
             
                 <video class="video-player" controls>
                     <source ng-src="{{video.src}}" type="video/mp4">
@@ -90,16 +77,14 @@
                 <div class="video-description">{{video.description}}</div>
                 
             
-            </div>
-        
         </div>
 
-        <div ng-show="found && (video.premium && !premium())" ng-include="'partials/premium.html'"></div>
+        <div ng-show="found && premiumVideo(video)" ng-include="'partials/premium.html'"></div>
 
         <div ng-hide="found" ng-include="'partials/404.html'"></div>
     </script>
 
-    <script type="text/ng-template" id="partials/article.html">
+    <script type="text/ng-template" id="templates/article.html">
         <div ng-show="{{found}}">
 
             <h3>{{article.headline}}</h3>
@@ -110,7 +95,7 @@
         <div ng-hide="found" ng-include="'partials/404.html'"></div>
     </script>
 
-    <script type="text/ng-template" id="partials/videos.html">
+    <script type="text/ng-template" id="templates/videos.html">
 
         <div class="tags-left-container">
 
@@ -145,30 +130,17 @@
                 </div>
                 
             </div>
-            
-            <div class="feed-video" ng-repeat="video in videos | orderBy:orderProp" ng-show="showVideo(video.tags)">
-                    
-                <a ng-href="{{video.href}}">
-                    <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
-                </a>
-                
-                <a ng-href="{{video.href}}">
-                    <div class="feed-video-title">{{video.name}}</div>
-                </a>
-                
-                <div class="feed-video-views">VIEWS: {{video.views}}</div>
-
-            </div>
+            <div ng-repeat="video in videos | orderBy:orderProp" ng-show="showVideo(video.tags)" ng-include="'partials/video.html'"></div>
             
         </div>
 
     </script>
 
-    <script type="text/ng-template" id="partials/about.html">
+    <script type="text/ng-template" id="templates/about.html">
         <div class="about about-center">{{about}}</div>
     </script>
     
-    <script type="text/ng-template" id="partials/links.html">
+    <script type="text/ng-template" id="templates/links.html">
     
         <div class="link_container" ng-repeat="link in links">
             <a class="link" ng-href="{{link.href}}">{{link.name}}</a>
@@ -182,6 +154,21 @@
 
     <script type="text/ng-template" id="partials/premium.html">
         <h3 class="premium">Fuck you bitch you aint got premium</h3>
+    </script>
+
+    <script type="text/ng-template" id="partials/video.html">
+        <div class="feed-video">
+            
+            <a ng-href="{{video.href}}">
+                <img class="feed-video-thumbnail" ng-src="{{video.thumbnail}}" />
+            </a>
+            
+            <a ng-href="{{video.href}}">
+                <div class="feed-video-title">{{video.name}}</div>
+            </a>
+            
+            <div class="feed-video-views">VIEWS: {{video.views}}</div>
+        </div>
     </script>
     
 </head>
@@ -203,7 +190,7 @@
     </div>
 
 	<div ng-show="premiumSignup" id="premium-signup">
-        	<img alt="can\'t\'tcel" id="premium-close" src="res/close.png" ng-click="togglePremiumSignup(false)" />
+        	<img title="Cancel" id="premium-close" src="res/close.png" ng-click="togglePremiumSignup(false)" />
    		</div>
 
     <div id="premium-signup-container" ng-show="premiumSignup" ng-click="togglePremiumSignup(false)">

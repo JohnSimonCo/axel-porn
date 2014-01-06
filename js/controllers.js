@@ -1,18 +1,10 @@
-$( ".feed-video-title" ).hover(
-  function() {
-  	alert('hover');
-  }, function() {
-  	alert('loljk');
-  }
-);
-
 var pornControllers = angular.module('pornControllers', []);
  
-pornControllers.controller('DefaultController', ['$scope',
+pornControllers.controller('MainController', ['$scope',
 	function ($scope) {
 		$scope.star = server.star;
 
-		$scope.premium = function() { return server.premium; };
+		$scope.premium = server.premium;
 		$scope.goPremium = function() {
 			server.premium = true;
 		};
@@ -29,7 +21,6 @@ pornControllers.controller('FeedController', ['$scope',
 	function ($scope) {
 		$scope.sections = server.sections;
 		$scope.news = server.news;
-		$scope.order = 'name';
 	}
 ]);
  
@@ -37,6 +28,10 @@ pornControllers.controller('VideoController', ['$scope', '$routeParams',
 	function($scope, $routeParams) {
 		$scope.video = server.videos[$routeParams.videoId];
 		$scope.found = typeof $scope.video !== 'undefined';
+
+		$scope.premiumVideo = function(video) {
+			return !server.premium && contains(video.tags, server.tags.premium);
+		}
 	}
 ]);
 
