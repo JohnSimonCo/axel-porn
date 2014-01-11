@@ -1,9 +1,11 @@
 var pornApp = angular.module('pornApp', [
   'ngRoute',
   'pornControllers'
-]);
-
-pornApp.config(['$routeProvider',
+])
+.run(function() {
+  createData();
+})
+.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/feed', {
