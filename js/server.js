@@ -1,13 +1,13 @@
 var censored = true;
 
-function cs(str, alt) {
-	if(censored) return alt ? alt : lorum.get(str.length);
-	else return str;
-}
-
-function co(obj, alt) {
-	if(censored) return alt ? alt : censore(obj);
-	else return obj;
+function c(obj, alt) {
+	if(typeof obj === 'string') {
+		if(censored) return alt ? alt : lorum.get(obj.length);
+		else return str;
+	} else if(typeof obj === 'object') {
+		if(censored) return alt ? alt : censore(obj);
+		else return obj;
+	}
 }
 
 function censore(object) {
@@ -19,6 +19,7 @@ function censore(object) {
 			censore(prop);
 		}
 	}
+	return object;
 }
 
 function initServer(data) {
