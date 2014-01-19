@@ -1,23 +1,36 @@
 pornApp.config(['routeListenerProvider',
   function(routeListenerProvider) {
     routeListenerProvider.
-    listen({
-        path: '/feed',
-        success: function(route) {
-            var HEADER_HEIGHT = 80;
-            window.addEventListener("scroll", function() {
-               if(window.scrollY < HEADER_HEIGHT) {
-                  var margin_cobo = -window.scrollY + 'px';
+    listen(function() {
+        var $window = $(window);
+        var HEADER_HEIGHT = 80;
+        var listener = function() {
+            if(window.scrollY < HEADER_HEIGHT) {
+              var marginCobo = -window.scrollY + 'px';
+              $('#news-scroll-container').css('margin-top', marginCobo);
+            } else {
+              $('#news-scroll-container').css('margin-top', -HEADER_HEIGHT +'px');
+            }
+        }
 
-                  $('#news-scroll-container').css('margin-top', margin_cobo);
-               }
-               else {
-                  $('#news-scroll-container').css('margin-top', -HEADER_HEIGHT +'px');
-               }
-            }, false);
+        return {
+            path: '/feed',
+            to: function(route) {
+                $window.scroll(listener);
+            },
+            from: function(route) {
+                $window.off('scroll', listener);
+            }
         }
     }).
-    listen('/videos/*', function() {
+    listen({
+        path: '/video/*',
+        to: function(route) {
+            alert('Welcome to ' + route.params.videoId);
+        },
+        from: function(route) {
+            alert(route.params.videoId + ' left');
+        }
     });
   }
 ]);

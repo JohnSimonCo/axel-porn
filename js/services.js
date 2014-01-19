@@ -5,7 +5,10 @@ var pornServices = angular.module('pornServices', [])
 		var provider = this;
 		var listeners = [];
 		this.listen = function(listener) {
-			listener.path.split('/');
+			if(typeof listener === 'function')
+				listener = listener();
+			
+			listener.path = listener.path.split('/');
 			listeners.push(listener);
 			return this;
 		}
@@ -41,17 +44,17 @@ var pornServices = angular.module('pornServices', [])
 				}
 			}
 			return {
-				startHandler: function(angularEvent, next, current) {
-					if(current.originalPath) {
+				startHandler: function(event, next, current) {
+					if(current && current.originalPath) {
 						callMatched(current.originalPath, function(listener) {
-							listener.callback(current);
+							if(listener.from) listener.from(current);
 						});
 					}
-				}
-				sucessHandler: function(angularEvent, current) {
+				},
+				sucessHandler: function(event, current) {
 					if(current.originalPath) {
 						callMatched(current.originalPath, function(listener) {
-							listener.callback(current);
+							if(listener.to) listener.to(current);
 						});
 					}
 				}
