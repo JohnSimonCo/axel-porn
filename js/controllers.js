@@ -1,6 +1,6 @@
 var pornControllers = angular.module('pornControllers', []);
  
-pornControllers.controller('MainController', ['$scope',
+pornControllers.controller('MainController', ['$scope', 'routeListener',
 	function ($scope) {
 		$scope.star = server.star;
 
@@ -15,7 +15,35 @@ pornControllers.controller('MainController', ['$scope',
 
 		$scope.footer = server.footer;
 	}
-])
+]);
+
+/*window.onRoute = new function() {
+	var listeners = {};
+	this.listen = function(path, callback) {
+		if(!listeners[path])
+			listeners[path] = [];
+		listeners[path].push(callback);
+	}
+	this.broadcast = function(path) {
+		this.current = path;
+		if(listeners[path]) {
+			for(var key in listeners[path]) {
+				listeners[path][key]();
+			}
+		}
+		alert(path);
+	}
+};*/
+
+pornControllers.controller('RootController', ['$rootScope', '$route',
+	function ($rootScope, $route) {/*
+		$rootScope.$on('$routeChangeSuccess', function() {
+			if($route.current.originalPath) {
+				window.onRoute.broadcast($route.current.originalPath.split('/')[1]);
+			}
+		});
+	*/}
+]);
 
 pornControllers.controller('FeedController', ['$scope',
 	function ($scope) {

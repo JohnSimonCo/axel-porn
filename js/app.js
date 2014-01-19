@@ -1,6 +1,7 @@
 var pornApp = angular.module('pornApp', [
   'ngRoute',
-  'pornControllers'
+  'pornControllers',
+  'pornServices'
 ])
 .run(function() {
   createData();

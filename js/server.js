@@ -3,7 +3,7 @@ var censored = true;
 function c(obj, alt) {
 	if(typeof obj === 'string') {
 		if(censored) return alt ? alt : lorum.get(obj.length);
-		else return str;
+		else return obj;
 	} else if(typeof obj === 'object') {
 		if(censored) return alt ? alt : censore(obj);
 		else return obj;
