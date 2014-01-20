@@ -433,13 +433,13 @@ a {
 	    margin-right:auto;
 	}
 	
-	.feed-left {
+	#feed-left {
 	    width:66%;
 	    padding-left:3%;
 	    float:left;
 	}
 
-	.feed-right {
+	#feed-right {
 	    width:25%;
 	    padding-left:3%;
 	    padding-right:3%;

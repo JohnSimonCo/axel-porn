@@ -3,14 +3,15 @@ pornApp.config(['routeListenerProvider',
     routeListenerProvider.
     listen(function() {
         var $window = $(window);
+        var MARGIN = 20;
         var listener = function() {
-            var HEADER_HEIGHT = $('#header').height(); //80
-            console.log($('#news-scroll-container').offset().top);
-            if(window.scrollY < HEADER_HEIGHT) {
+        var $container = $('#news-scroll-container');
+        var position = $container.position().top - MARGIN;
+            if(window.scrollY < position) {
               var marginCobo = -window.scrollY + 'px';
-              $('#news-scroll-container').css('margin-top', marginCobo);
+              $container.css('margin-top', marginCobo);
             } else {
-              $('#news-scroll-container').css('margin-top', -HEADER_HEIGHT +'px');
+              $container.css('margin-top', -position +'px');
             }
         }
 
