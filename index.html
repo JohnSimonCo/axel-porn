@@ -16,6 +16,7 @@
     <script src="js/server.js"></script>
     <script src="js/data.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
@@ -45,7 +46,7 @@
 		    
 		    <div id="feed-right">
 
-                <div id="news-scroll-container">
+                <div scrollis scroll-margin="20" id="something-else">
 		        
     		        <div class="news-title">News</div>
     		        <div class="news-container">
@@ -118,7 +119,6 @@
         </div>
         
         <div class="tags-right-container">
-        
             <div class="tags-right-top">
 
                 <div class="tags-right-top-title">
@@ -132,7 +132,6 @@
                 
             </div>
             <div ng-repeat="video in videos | orderBy:orderProp" ng-show="showVideo(video.tags)" ng-include="'partials/video.html'"></div>
-            
         </div>
 
     </script>

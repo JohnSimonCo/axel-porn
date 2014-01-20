@@ -1,12 +1,12 @@
 pornApp.config(['routeListenerProvider',
   function(routeListenerProvider) {
     routeListenerProvider.
-    listen(function() {
+    /*listen(function() {
         var $window = $(window);
         var MARGIN = 20;
         var listener = function() {
-        var $container = $('#news-scroll-container');
-        var position = $container.position().top - MARGIN;
+            var $container = $('#news-scroll-container');
+            var position = $container.position().top - MARGIN;
             if(window.scrollY < position) {
               var marginCobo = -window.scrollY + 'px';
               $container.css('margin-top', marginCobo);
@@ -24,7 +24,7 @@ pornApp.config(['routeListenerProvider',
                 $window.off('scroll', listener);
             }
         }
-    }).
+    }).*/
     listen({
         path: '/video/*',
         to: function(route) {

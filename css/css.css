@@ -204,8 +204,10 @@ a {
 #news-scroll-container {
     /*
     WHY? Makes it look wierd and laggy :)
-    transition: margin-top 0.01s;*/
-    position: fixed;
+    transition: margin-top 0.01s;
+
+    Not needed since were using the directive
+    position: fixed;*/
 }
 
 .news-title {
