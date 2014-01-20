@@ -14,7 +14,7 @@ a {
         background:#e74c3c;
 }
 
-.header {
+#header {
     height:80px;
     width:100%;
     margin-bottom:10px;
@@ -202,7 +202,9 @@ a {
 }
 
 #news-scroll-container {
-    transition: margin-top 0.01s;
+    /*
+    WHY? Makes it look wierd and laggy :)
+    transition: margin-top 0.01s;*/
     position: fixed;
 }
 

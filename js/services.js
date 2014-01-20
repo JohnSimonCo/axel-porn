@@ -5,11 +5,9 @@ var pornServices = angular.module('pornServices', [])
 		var provider = this;
 		var listeners = [];
 		this.listen = function(listener) {
-			if(typeof listener === 'function')
-				listener = listener();
-			
-			listener.path = listener.path.split('/');
-			listeners.push(listener);
+			var copy = typeof listener === 'function' ? listener() : listener;
+			copy.path = copy.path.split('/');
+			listeners.push(copy);
 			return this;
 		}
 		this.$get = function() {

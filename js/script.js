@@ -3,8 +3,9 @@ pornApp.config(['routeListenerProvider',
     routeListenerProvider.
     listen(function() {
         var $window = $(window);
-        var HEADER_HEIGHT = 80;
         var listener = function() {
+            var HEADER_HEIGHT = $('#header').height(); //80
+            console.log($('#news-scroll-container').offset().top);
             if(window.scrollY < HEADER_HEIGHT) {
               var marginCobo = -window.scrollY + 'px';
               $('#news-scroll-container').css('margin-top', marginCobo);
