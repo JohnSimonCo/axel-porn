@@ -46,7 +46,7 @@
 		    
 		    <div id="feed-right">
 
-                <div scrollis scroll-margin="20" id="something-else">
+                <div scroll scroll-margin="20" id="something-else">
 		        
     		        <div class="news-title">News</div>
     		        <div class="news-container">
@@ -131,7 +131,7 @@
                 </div>
                 
             </div>
-            <div ng-repeat="video in videos | orderBy:orderProp" ng-show="showVideo(video.tags)" ng-include="'partials/video.html'"></div>
+            <div ng-repeat="video in videos | filter:tagQuery |orderBy:orderProp" ng-show="showVideo(video.tags)" ng-include="'partials/video.html'"></div>
         </div>
 
     </script>
