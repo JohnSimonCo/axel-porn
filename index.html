@@ -101,7 +101,7 @@
 
         <div class="tags-left-container">
 
-            <input placeholder="Search" ng-model="tagQuery" class="tags-search" />
+            <input placeholder="Search tags" ng-model="tagQuery" class="tags-search" />
             <div class="tags-search-query-clear" ng-show="showTagQueryClear()" ng-click="clearTagQuery()">X</div>
  
             <div class="tags-search-clear" ng-click="clearTags()" ng-show="showTagsClear()">
@@ -120,6 +120,7 @@
         
         <div class="tags-right-container">
             <div class="tags-right-top">
+            <input placeholder="Search videos" ng-model="videoQuery" class="tags-search" />
 
                 <div class="tags-right-top-title">
                 Sort by:
@@ -131,7 +132,7 @@
                 </div>
                 
             </div>
-            <div ng-repeat="video in videos | filter:tagQuery |orderBy:orderProp" ng-show="showVideo(video.tags)" ng-include="'partials/video.html'"></div>
+            <div ng-repeat="video in videos | filter:{name: videoQuery} | orderBy:orderProp" ng-show="showVideo(video.tags)" ng-include="'partials/video.html'"></div>
         </div>
 
     </script>

@@ -1,9 +1,17 @@
-var Section = function(name, assign, order) {
+var orderClosure = function() {
+	var order = -1;
+	return function() {
+		this.order = ++order;
+	}
+};
+
+var Section = function(name, assign) {
 	this.name = name;
 	this.assign = assign;
-	this.order = order;
 	this.videos = [];
+	this.getOrder();
 }
+Section.prototype = {getOrder: orderClosure()};
 
 var createData = function() {
 	var data = {};
@@ -412,16 +420,16 @@ var createData = function() {
 	data.sections = {
 		premium: new Section('Premium', function(video) {
 			return contains(video.tags, data.tags.premium);
-		}, 0),
+		}),
 		hot: new Section('Hot', function(video) {
 			return contains(video.tags, data.tags.hot);
-		}, 1),
+		}),
 		mostWatched: new Section('Most watched', function(video) {
 			return video.views > 100;
-		}, 3),
+		}),
 		watchedNow: new Section('Watched right now', function(video) {
 			return contains(video.tags, data.tags.watchedNow);
-		}, 4)
+		})
 	};
 
 	data.news = [

@@ -1,4 +1,4 @@
-var censored = false;
+var censored = true;
 
 function c(obj, alt) {
 	if(typeof obj === 'string') {
