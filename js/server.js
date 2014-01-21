@@ -23,6 +23,12 @@ function censore(object) {
 }
 
 function initServer(data) {
+	var old = data.tags;
+	data.tags = [];
+	for(var tag in old) {
+		data.tags.push(old[tag]);
+	}
+
 	for(var id in data.videos) {
 		var video = data.videos[id];
 		video.href = '#/video/' + id;

@@ -417,20 +417,20 @@ var createData = function() {
 		}
 	];
 
-	data.sections = {
-		premium: new Section('Premium', function(video) {
+	data.sections = [
+		new Section('Premium', function(video) {
 			return contains(video.tags, data.tags.premium);
 		}),
-		hot: new Section('Hot', function(video) {
+		new Section('Hot', function(video) {
 			return contains(video.tags, data.tags.hot);
 		}),
-		mostWatched: new Section('Most watched', function(video) {
+		new Section('Most watched', function(video) {
 			return video.views > 100;
 		}),
-		watchedNow: new Section('Watched right now', function(video) {
+		new Section('Watched right now', function(video) {
 			return contains(video.tags, data.tags.watchedNow);
 		})
-	};
+	];
 
 	data.news = [
 		{
