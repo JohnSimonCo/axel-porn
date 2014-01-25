@@ -418,11 +418,11 @@ var createData = function() {
 	];
 
 	data.sections = [
-		new Section('Premium', function(video) {
-			return contains(video.tags, data.tags.premium);
-		}),
 		new Section('Hot', function(video) {
 			return contains(video.tags, data.tags.hot);
+		}),
+		new Section('Premium', function(video) {
+			return contains(video.tags, data.tags.premium);
 		}),
 		new Section('Most watched', function(video) {
 			return video.views > 100;

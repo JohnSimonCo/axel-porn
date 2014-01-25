@@ -1,4 +1,4 @@
-var censored = true;
+var censored = false;
 
 function c(obj, alt) {
 	if(typeof obj === 'string') {
@@ -23,12 +23,6 @@ function censore(object) {
 }
 
 function initServer(data) {
-	var old = data.tags;
-	data.tags = [];
-	for(var tag in old) {
-		data.tags.push(old[tag]);
-	}
-
 	for(var id in data.videos) {
 		var video = data.videos[id];
 		video.href = '#/video/' + id;
@@ -46,6 +40,12 @@ function initServer(data) {
 
 	for(var article in data.news) {
 		data.news[article].href = '#/article/' + article;
+	}
+
+	var old = data.tags;
+	data.tags = [];
+	for(var tag in old) {
+		data.tags.push(old[tag]);
 	}
 
 	window.server = data;
