@@ -100,13 +100,13 @@ a {
     padding-bottom:5px;
 }
 
-.feed-left {
+#feed-left {
     width:62%;
     padding-left:3%;
     float:left;
 }
 
-.feed-right {
+#feed-right {
     width:29%;
     padding-left:3%;
     padding-right:3%;
