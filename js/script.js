@@ -1,7 +1,7 @@
 pornApp.config(['routeListenerProvider',
   function(routeListenerProvider) {
     routeListenerProvider.
-    /*listen(function() {
+    listen(function() {
         var $window = $(window);
         var MARGIN = 20;
         var listener = function() {
@@ -24,7 +24,7 @@ pornApp.config(['routeListenerProvider',
                 $window.off('scroll', listener);
             }
         }
-    }).*/
+    }).
     listen({
         path: '/video/*',
         to: function(route) {
